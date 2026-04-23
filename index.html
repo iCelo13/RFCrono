@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RF CRONOMETRAGEM — RF CRONOMETRAGEM</title>
+  <link rel="stylesheet" href="styles.css" /> 
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="#">RF CRONOMETRAGEM</a>
+
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Início</a></li>
+          <li class="nav__item"><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li class="nav__item"><a href="#proximos-eventos" class="nav__link">Próximos Eventos</a></li>
+          <li class="nav__item"><a href="#resultados" class="nav__link">Resultados</a></li> 
+          <li class="nav__item"><a href="#portefolio" class="nav__link">Portefólio</a></li>
+          <li class="nav__item"><a href="#patrocinadores" class="nav__link">Parceiros</a></li> <li class="nav__item"><a href="#contactos" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">RFCronometragem de alta precisão para rali & motocross</h1>
+          <p class="hero__subtitle">
+            Garantimos tempos fiáveis ao milésimo de segundo, com resultados em tempo real.
+          </p>
+          <div class="hero__actions">
+            <a href="#servicos" class="btn btn--primary">Ver serviços</a>
+            <a href="#proximos-eventos" class="btn btn--ghost">Próximos Eventos</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+            <div class="countdown-card">
+                <div class="countdown-header">
+                    <svg class="timer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm.01 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7h-.5z"/>
+                    </svg>
+                    <span>Próxima Prova</span>
+                </div>
+                <div class="countdown-body">
+                    <p class="event-name" id="eventName">Local do Evento</p>
+                    <p class="event-date" id="eventDate">DD.MM.YYYY HH:MM</p>
+                    <div class="countdown-timer" id="countdownTimer">
+                        <span class="countdown-value" id="countdownDays">0</span>
+                        <span class="countdown-label">Dias</span>
+                        <span class="countdown-value" id="countdownHours">0</span>
+                        <span class="countdown-label">Horas</span>
+                        <span class="countdown-value" id="countdownMinutes">0</span>
+                        <span class="countdown-label">Mins</span>
+                        <span class="countdown-value" id="countdownSeconds">0</span>
+                        <span class="countdown-label">Segs</span>
+                    </div>
+                    <p class="countdown-status" id="countdownStatus"></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section section--light">
+      <div class="container">
+        <h2 class="section__title">Serviços</h2>
+        <p class="section__lead">Especializados em cronometragem desportiva para diferentes modalidades.</p>
+
+        <div class="grid grid--3up">
+          <article class="card">
+            <h3 class="card__title">Rali</h3>
+            <p class="card__text">Cronometragem precisa em provas de rali, com controlo de especiais e splits.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Motocross e Endurance</h3>
+            <p class="card__text">Gestão completa de tempos em corridas off-road, com resultados live.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Gestão de Resultados</h3>
+            <p class="card__text">Alguns campeonatos e provas que cronometrámos</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <section id="proximos-eventos" class="section">
+      <div class="container">
+        <h2 class="section__title">Próximos Eventos</h2>
+        <p class="section__lead">Fique a par das próximas provas onde estaremos presentes</p>
+
+        <div class="gallery">
+          <figure class="gallery__item">
+            <img src="images/WhatsApp Image 2026-04-22 at 13.52.20.jpeg" alt="Próximo Evento 1 — screenshot" />
+            <figcaption>Resistência Enduro - 25/04/2026</figcaption>
+          </figure>
+
+          <figure class="gallery__item">
+            <img src="images/WhatsApp Image 2026-04-22 at 13.57.01.jpeg" alt="Próximo Evento 2 — screenshot" />
+            <figcaption>Motocross & Quadcross - 26/04/2026</figcaption>
+          </figure>
+
+          <figure class="gallery__item">
+            <img src="images/WhatsApp Image 2026-04-22 at 13.58.23.jpeg" alt="Próximo Evento 3 — screenshot" />
+            <figcaption>Resistência Enduro - 10/05/2026</figcaption>
+          </figure>
+
+          <!--figure class="gallery__item">
+            <img src="images/images3.jpeg" alt="Próximo Evento 4 — screenshot" />
+            <figcaption>Endurance MX - 20/01/2026</figcaption>
+          </figure-->
+        </div>
+      </div>
+    </section>
+
+    <!--section id="resultados" class="section section--light">
+      <div class="container">
+        <h2 class="section__title">Resultados Oficiais</h2>
+        <p class="section__lead">Aceda aos documentos oficiais de tempos e classificações.</p>
+
+        <div class="results-list">
+          <article class="result-item">
+            <div class="result-info">
+              <h3 class="result-title">Rali de Fafe - 2ª Prova Campeonato Nacional</h3>
+              <p class="result-meta">Data: 10 de Março de 2025 | <span class="result-status status-final">Resultados Finais</span></p>
+            </div>
+            <a href="resultados/fafe_2025_final.pdf" target="_blank" class="btn btn--secondary">Ver PDF</a>
+          </article>
+
+          <article class="result-item">
+            <div class="result-info">
+              <h3 class="result-title">Campeonato Motocross Sul - Etapa 4</h3>
+              <p class="result-meta">Data: 28 de Fevereiro de 2025 | <span class="result-status status-provisional">Provisórios</span></p>
+            </div>
+            <a href="resultados/motocross_etapa4_provisorio.pdf" target="_blank" class="btn btn--secondary">Ver PDF</a>
+          </article>
+          
+          <article class="result-item">
+            <div class="result-info">
+              <h3 class="result-title">Endurance TT - 6 Horas de Resistência</h3>
+              <p class="result-meta">Data: 15 de Janeiro de 2025 | <span class="result-status status-final">Resultados Finais</span></p>
+            </div>
+            <a href="resultados/endurance_6horas_final.pdf" target="_blank" class="btn btn--secondary">Ver PDF</a>
+          </article>
+
+        </div>
+        
+        <p class="section__lead section__lead--small">Os documentos estão sujeitos a confirmação dos organizadores.</p>
+      </div>
+    </section-->
+
+    <section id="portefolio" class="section">
+      <div class="container">
+        <h2 class="section__title">Eventos Recentes</h2>
+        <p class="section__lead">Alguns projectos e exemplos de layouts</p>
+
+        <div class="gallery">
+          <figure class="gallery__item">
+            <img src="images/WhatsApp Image 2026-04-22 at 14.00.01.jpeg" alt="Resistencia TT" />
+            <figcaption>Resistencia TT</figcaption>
+          </figure>
+
+          <figure class="gallery__item">
+            <img src="images/WhatsApp Image 2026-04-22 at 13.58.09.jpeg" alt="Grande Final Parada Fundao" />
+            <figcaption>Grande Final Parada Fundao</figcaption>
+          </figure>
+
+          <!--figure class="gallery__item">
+            <img src="images/images2.jpeg" alt="Quinta da Feiteira" />
+            <figcaption>Quinta da Feiteira</figcaption>
+          </figure>
+
+          <figure class="gallery__item">
+            <img src="images/images3.jpeg" alt="Parada do Pinhao" />
+            <figcaption>Parada do Pinhao</figcaption>
+          </figure-->
+        </div>
+      </div>
+    </section>
+
+    <section id="patrocinadores" class="section section--light">
+      <div class="container">
+        <h2 class="section__title section__title--center">Parceiros Oficiais</h2>
+        <p class="section__lead section__lead--center">Contamos com o apoio de marcas líderes no desporto motorizado.</p>
+
+        <div class="sponsor-carousel">
+          <div class="sponsor-track">
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.14.jpeg" alt="Patrocinador 1" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.14(1).jpeg" alt="Patrocinador 2" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.14(2).jpeg" alt="Patrocinador 3" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.14(3).jpeg" alt="Patrocinador 4" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.14(4).jpeg" alt="Patrocinador 5" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.15.jpeg" alt="Patrocinador 6" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.15(1).jpeg" alt="Patrocinador 1" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.15(2).jpeg" alt="Patrocinador 2" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.15(3).jpeg" alt="Patrocinador 3" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.15(4).jpeg" alt="Patrocinador 4" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.16.jpeg" alt="Patrocinador 5" />
+            <!-- repete a sequência para criar o loop sem cortes -->
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.14.jpeg" alt="Patrocinador 1" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.14(1).jpeg" alt="Patrocinador 2" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.14(2).jpeg" alt="Patrocinador 3" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.14(3).jpeg" alt="Patrocinador 4" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.14(4).jpeg" alt="Patrocinador 5" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.15.jpeg" alt="Patrocinador 6" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.15(1).jpeg" alt="Patrocinador 1" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.15(2).jpeg" alt="Patrocinador 2" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.15(3).jpeg" alt="Patrocinador 3" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.15(4).jpeg" alt="Patrocinador 4" />
+            <img src="images/WhatsApp Image 2026-03-28 at 12.34.16.jpeg" alt="Patrocinador 5" />
+         </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="contactos" class="section section--dark">
+  <div class="container contact">
+    <div class="contact__card">
+      <h2 class="section__title">Fale Connosco</h2>
+      <p class="section__lead">Peça já um orçamento para a sua prova.</p>
+
+      <form class="form" action="https://formsubmit.co/meduardofcabral@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://teusite.com/obrigado.html">
+
+        <div class="form__grid">
+          <label class="form__field">
+            <span class="form__label">Nome</span>
+            <input type="text" name="name" required placeholder="Ex.: Maria Silva" />
+          </label>
+
+          <label class="form__field">
+            <span class="form__label">Email</span>
+            <input type="email" name="email" required placeholder="nome@exemplo.com" />
+          </label>
+        </div>
+
+        <label class="form__field">
+          <span class="form__label">Mensagem</span>
+          <textarea name="message" rows="5" placeholder="Descrição breve..." required></textarea>
+        </label>
+
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit">Enviar</button>
+          <button class="btn btn--ghost" type="reset">Limpar</button>
+        </div>
+      </form>
+    </div>
+
+    <aside class="contact__info" aria-hidden="true">
+      <h3>Informação</h3>
+      <p>Telefone: +351 935 604 040<br/>Localização: Porto, Portugal</p>
+    </aside>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> RF Cronometragem — Todos os direitos reservados.</p>
+      <nav aria-label="rodapé">
+        <ul class="footer__links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#proximos-eventos">Próximos Eventos</a></li>
+          <li><a href="#resultados">Resultados</a></li> 
+          <li><a href="#portefolio">Portefólio</a></li>
+          <li><a href="#contactos">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // 1. Inserir ano atual no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // 2. Fechar menu mobile ao clicar num link (melhora UX)
+    document.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        const toggle = document.getElementById('nav-toggle');
+        if (toggle.checked) toggle.checked = false;
+      });
+    });
+
+    // 3. Lógica do Contador de Tempo
+    const eventNameElement = document.getElementById('eventName');
+    const eventDateElement = document.getElementById('eventDate');
+    const countdownDaysElement = document.getElementById('countdownDays');
+    const countdownHoursElement = document.getElementById('countdownHours');
+    const countdownMinutesElement = document.getElementById('countdownMinutes');
+    const countdownSecondsElement = document.getElementById('countdownSeconds');
+    const countdownStatusElement = document.getElementById('countdownStatus');
+
+    // ** IMPORTANTE: Altere esta data e nome para o seu próximo evento **
+    const nextEventDate = new Date('2026-04-25T09:00:00').getTime(); 
+    const nextEventName = 'Resistência Enduro'; 
+    // ------------------------------------------------------------------
+    
+    eventNameElement.textContent = nextEventName;
+    eventDateElement.textContent = new Date(nextEventDate).toLocaleString('pt-PT', { 
+        day: '2-digit', month: '2-digit', year: 'numeric', 
+        hour: '2-digit', minute: '2-digit' 
+    });
+
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = nextEventDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      if (distance < 0) {
+        clearInterval(countdownInterval);
+        countdownDaysElement.textContent = '0';
+        countdownHoursElement.textContent = '00';
+        countdownMinutesElement.textContent = '00';
+        countdownSecondsElement.textContent = '00';
+        countdownStatusElement.textContent = 'Terminou';
+        countdownStatusElement.style.color = '#dc2626'; 
+      } else {
+        countdownDaysElement.textContent = days;
+        countdownHoursElement.textContent = hours.toString().padStart(2, '0');
+        countdownMinutesElement.textContent = minutes.toString().padStart(2, '0');
+        countdownSecondsElement.textContent = seconds.toString().padStart(2, '0');
+        countdownStatusElement.textContent = 'FALTAM';
+        countdownStatusElement.style.color = 'var(--accent-600)'; 
+      }
+    }
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+    updateCountdown(); 
+  </script>
+</body>
+</html>
