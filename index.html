@@ -7,6 +7,27 @@
   <link rel="stylesheet" href="styles.css" /> 
 </head>
 <body>
+
+  <!-- ESTE BLOCO DEVE FICAR AQUI, NO TOPO -->
+  <input type="checkbox" id="close-popup" class="popup-toggle" aria-hidden="true" />
+  
+  <div class="popup-overlay">
+    <div class="popup-card">
+      <!-- Botão X para fechar -->
+      <label for="close-popup" class="popup-close-btn">&times;</label>
+      
+      <!-- A tua imagem -->
+      <img src="images/WhatsApp Image 2026-05-14 at 17.45.53.jpeg" alt="Destaque" class="popup-image" />
+      
+      <!-- Botão opcional por baixo da imagem -->
+      <div class="popup-footer">
+        <label for="close-popup" class="btn btn--primary">Continuar para o site</label>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    
   <header class="site-header">
     <div class="container header__inner">
       <a class="logo" href="#">RF CRONOMETRAGEM</a>
