@@ -477,82 +477,80 @@ input,textarea{
   .contact{ grid-template-columns: 1fr 320px; }
 }
 
+/* Garante que o input nunca apareça */
 .popup-toggle {
-  display: none;
+  display: none !important;
 }
 
-/* 2. O fundo (Overlay) - Ocupa o ecrã todo e fica fixo */
+/* Overlay fixa e visível por padrão */
 .popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Fundo preto semi-transparente */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 99999; /* Garante que fica à frente de tudo */
-  backdrop-filter: blur(8px);
-  transition: all 0.3s ease;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(0, 0, 0, 0.92) !important; /* Fundo bem escuro */
+  display: flex !important; /* Ativa o alinhamento central */
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 999999 !important; /* Acima de TUDO */
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* 3. O cartão que contém a imagem */
+/* O cartão do pop-up */
 .popup-card {
   position: relative;
   width: 90%;
-  max-width: 500px; /* Largura máxima do pop-up */
+  max-width: 450px;
   background: var(--card-bg);
   border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-  animation: popupScale 0.4s ease-out;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+  transform: scale(1);
 }
 
-/* 4. A Imagem */
+/* Imagem */
 .popup-image {
   width: 100%;
-  height: auto;
   display: block;
+  max-height: 60vh;
+  object-fit: cover;
 }
 
-/* 5. Botão de fechar (X) */
+/* Botão de fechar (X) */
 .popup-close-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 32px;
-  color: white;
+  top: 15px;
+  right: 20px;
+  font-size: 40px;
+  color: #fff;
   cursor: pointer;
-  z-index: 100;
-  line-height: 1;
-  transition: transform 0.2s;
+  z-index: 1000001;
+  line-height: 0.5;
+  font-weight: bold;
 }
 
-.popup-close-btn:hover {
-  transform: scale(1.2);
-  color: var(--accent);
-}
-
-/* 6. Rodapé do pop-up com botão */
 .popup-footer {
-  padding: 1.5rem;
+  padding: 20px;
   text-align: center;
-  background: var(--card-bg);
 }
 
-/* --- A LÓGICA DE FECHAR --- */
-/* Quando o checkbox for marcado (clicar no X), esconde o overlay */
+/* LÓGICA DE FECHAR: Só funciona se o input estiver ANTES do overlay no HTML */
 .popup-toggle:checked ~ .popup-overlay {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
-/* Animação de entrada */
-@keyframes popupScale {
-  from { transform: scale(0.7); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+/* Animação para o pop-up surgir suavemente */
+@keyframes popupEntrance {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
 }
-  outline-offset:3px;
+
+.popup-card {
+  animation: popupEntrance 0.4s ease-out;
 }
