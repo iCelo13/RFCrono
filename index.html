@@ -8,23 +8,20 @@
 </head>
 <body>
 
-  <!-- ESTE BLOCO DEVE FICAR AQUI, NO TOPO -->
-  <input type="checkbox" id="close-popup" class="popup-toggle" aria-hidden="true" />
-  
-  <div class="popup-overlay">
-    <div class="popup-card">
-      <!-- Botão X para fechar -->
-      <label for="close-popup" class="popup-close-btn">&times;</label>
-      
-      <!-- A tua imagem -->
+ <input type="checkbox" id="close-popup" class="popup-toggle" autocomplete="off" />
+
+<div class="popup-overlay">
+  <div class="popup-card">
+    <!-- Botão X Estilizado -->
+    <label for="close-popup" class="popup-close-wrapper">
+      <span class="popup-close-icon">&times;</span>
+    </label>
+    
+    <div class="popup-image-container">
       <img src="images/WhatsApp Image 2026-05-14 at 17.45.53.jpeg" alt="Destaque" class="popup-image" />
-      
-      <!-- Botão opcional por baixo da imagem -->
-      <div class="popup-footer">
-        <label for="close-popup" class="btn btn--primary">Continuar para o site</label>
-      </div>
     </div>
   </div>
+</div>
 
   <header class="site-header">
     
