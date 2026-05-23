@@ -477,6 +477,98 @@ input,textarea{
   .contact{ grid-template-columns: 1fr 320px; }
 }
 
+.popup-toggle {
+  display: none;
+}
+
+/* O fundo escuro e desfocado atrás do pop-up */
+.popup-overlay {
+  position: fixed;
+  inset: 0; /* Ocupa o ecrã inteiro */
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 9999; /* Garante que fica por cima de tudo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOverlay 0.4s ease-out forwards;
+}
+
+/* O cartão do pop-up (reutiliza as variáveis do teu tema) */
+.popup-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+  /* Animação que faz o pop-up "saltar" ao carregar a página */
+  animation: popCard 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* O (X) para fechar no canto superior direito */
+.popup-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  z-index: 10;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Garante leitura sobre a imagem */
+  transition: color 0.2s ease;
+}
+
+.popup-close-btn:hover {
+  color: var(--accent);
+}
+
+/* Estilo da Imagem do Pop-up */
+.popup-image {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Área de texto do pop-up */
+.popup-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.popup-title {
+  margin: 0 0 0.5rem 0;
+  color: var(--text);
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif; /* Acompanha o estilo do teu hero__title */
+}
+
+.popup-text {
+  color: var(--muted);
+  margin: 0 0 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+/* A MAGIA SEM JS: Se o checkbox invisível for "checked" (marcado pelo clique nas labels), o overlay desaparece */
+.popup-toggle:checked ~ .popup-overlay {
+  display: none;
+}
+
+/* Animações CSS */
+@keyframes fadeOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popCard {
+  from { opacity: 0; transform: scale(0.8) translateY(20px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
 /* Focus */
 a:focus, button:focus, input:focus, textarea:focus {
   outline: 3px solid rgba(99,102,241,0.6);
