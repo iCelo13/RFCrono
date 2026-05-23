@@ -340,5 +340,29 @@
     const countdownInterval = setInterval(updateCountdown, 1000);
     updateCountdown(); 
   </script>
+
+  <!-- INÍCIO DO POP-UP (Apenas CSS) -->
+  <input type="checkbox" id="close-popup" class="popup-toggle" aria-hidden="true" />
+  <div class="popup-overlay">
+    <div class="popup-card">
+      <!-- Botão de fechar (X) -->
+      <label for="close-popup" class="popup-close-btn" aria-label="Fechar">&times;</label>
+      
+      <!-- Imagem do Pop-up (Substitui o src pela tua imagem) -->
+      <img src="images/WhatsApp Image 2026-05-14 at 17.45.53.jpeg" alt="Destaque" class="popup-image" />
+      
+      <!-- Informação opcional abaixo da imagem >
+      <div class="popup-info">
+        <h3 class="popup-title">Aviso / Destaque</h3>
+        <p class="popup-text">Aproveite para destacar um evento importante ou dar as boas-vindas.</p-->
+        
+        <!-- Botão para fechar (usa as tuas classes existentes) -->
+        <label for="close-popup" class="btn btn--primary">Entrar no Site</label>
+      </div>
+    </div>
+  </div>
+  <!-- FIM DO POP-UP -->
+
+  <header class="site-header">
 </body>
 </html>
