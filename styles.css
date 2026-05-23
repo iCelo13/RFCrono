@@ -481,96 +481,78 @@ input,textarea{
   display: none;
 }
 
-/* O fundo escuro e desfocado atrás do pop-up */
+/* 2. O fundo (Overlay) - Ocupa o ecrã todo e fica fixo */
 .popup-overlay {
   position: fixed;
-  inset: 0; /* Ocupa o ecrã inteiro */
-  background: rgba(10, 10, 15, 0.85);
-  backdrop-filter: blur(5px);
-  z-index: 9999; /* Garante que fica por cima de tudo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo preto semi-transparente */
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeOverlay 0.4s ease-out forwards;
+  z-index: 99999; /* Garante que fica à frente de tudo */
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
 }
 
-/* O cartão do pop-up (reutiliza as variáveis do teu tema) */
+/* 3. O cartão que contém a imagem */
 .popup-card {
+  position: relative;
+  width: 90%;
+  max-width: 500px; /* Largura máxima do pop-up */
   background: var(--card-bg);
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
-  max-width: 500px;
-  width: 90%;
-  position: relative;
   overflow: hidden;
-  /* Animação que faz o pop-up "saltar" ao carregar a página */
-  animation: popCard 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  animation: popupScale 0.4s ease-out;
 }
 
-/* O (X) para fechar no canto superior direito */
+/* 4. A Imagem */
+.popup-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 5. Botão de fechar (X) */
 .popup-close-btn {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 2rem;
-  color: #fff;
+  font-size: 32px;
+  color: white;
   cursor: pointer;
+  z-index: 100;
   line-height: 1;
-  z-index: 10;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Garante leitura sobre a imagem */
-  transition: color 0.2s ease;
+  transition: transform 0.2s;
 }
 
 .popup-close-btn:hover {
+  transform: scale(1.2);
   color: var(--accent);
 }
 
-/* Estilo da Imagem do Pop-up */
-.popup-image {
-  width: 100%;
-  height: auto;
-  max-height: 350px;
-  object-fit: cover;
-  display: block;
-}
-
-/* Área de texto do pop-up */
-.popup-info {
+/* 6. Rodapé do pop-up com botão */
+.popup-footer {
   padding: 1.5rem;
   text-align: center;
+  background: var(--card-bg);
 }
 
-.popup-title {
-  margin: 0 0 0.5rem 0;
-  color: var(--text);
-  text-transform: uppercase;
-  font-family: 'Oswald', sans-serif; /* Acompanha o estilo do teu hero__title */
-}
-
-.popup-text {
-  color: var(--muted);
-  margin: 0 0 1.5rem 0;
-  font-size: 0.95rem;
-}
-
-/* A MAGIA SEM JS: Se o checkbox invisível for "checked" (marcado pelo clique nas labels), o overlay desaparece */
+/* --- A LÓGICA DE FECHAR --- */
+/* Quando o checkbox for marcado (clicar no X), esconde o overlay */
 .popup-toggle:checked ~ .popup-overlay {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
-/* Animações CSS */
-@keyframes fadeOverlay {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* Animação de entrada */
+@keyframes popupScale {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
-
-@keyframes popCard {
-  from { opacity: 0; transform: scale(0.8) translateY(20px); }
-  to { opacity: 1; transform: scale(1) translateY(0); }
-}
-/* Focus */
-a:focus, button:focus, input:focus, textarea:focus {
-  outline: 3px solid rgba(99,102,241,0.6);
   outline-offset:3px;
 }
