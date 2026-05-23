@@ -479,105 +479,86 @@ input,textarea{
 
 /* --- POP-UP REFINADO --- */
 
+/* --- POP-UP FOCO NA IMAGEM --- */
+
 .popup-overlay {
   position: fixed !important;
   inset: 0 !important;
-  background: rgba(10, 10, 15, 0.9) !important;
+  background: rgba(0, 0, 0, 0.95) !important; /* Fundo mais escuro para destacar o poster */
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
   z-index: 999999 !important;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
-/* Reduzi a largura máxima de 450px para 380px para ser menos invasivo */
 .popup-card {
   position: relative;
-  width: 85%;
-  max-width: 380px; 
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  border: 2px solid var(--accent); /* Borda azul racing */
-  overflow: hidden;
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3); /* Glow azul */
-  animation: popupEntrance 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* Container da imagem com padding para não tocar nas bordas, se preferires */
-.popup-image-container {
-  width: 100%;
-  background: #000;
+  /* O card agora ajusta-se à largura da imagem automaticamente */
+  width: auto; 
+  max-width: 95%; /* Segurança para não cortar nas laterais em telemóveis */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  animation: popupEntrance 0.4s ease-out;
 }
 
-.popup-image {
-  width: 100%;
-  height: auto;
-  max-height: 250px; /* Reduzi a altura máxima */
-  object-fit: contain; /* Garante que a imagem não seja cortada */
+.popup-img-full {
   display: block;
+  /* Altura de 90% da tela para deixar um pequeno respiro em cima e em baixo */
+  height: 90vh; 
+  width: auto; /* Mantém a proporção original da imagem sem distorcer */
+  max-width: 100%;
+  border-radius: 8px; /* Leve arredondamento para condizer com o teu design */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* BOTÃO X ESTILIZADO (Estilo Racing) */
+/* BOTÃO X (Mantido o design anterior, ajustado à posição da imagem) */
 .popup-close-wrapper {
   position: absolute;
-  top: -12px;
-  right: -12px;
-  width: 40px;
-  height: 40px;
-  background: var(--accent); /* Azul */
-  background: linear-gradient(135deg, var(--accent), var(--accent-600)); /* Gradiente do site */
+  top: 10px;
+  right: 10px;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-600));
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   z-index: 1000;
-  border: 3px solid var(--card-bg);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease;
 }
 
 .popup-close-wrapper:hover {
-  transform: scale(1.1) rotate(90deg);
-  box-shadow: 0 0 15px var(--accent-600);
+  transform: scale(1.1);
 }
 
 .popup-close-icon {
   color: white;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 1;
-  margin-bottom: 2px; /* Ajuste fino visual */
 }
 
-/* Ajustes de Texto */
-.popup-footer {
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.popup-title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2rem;
-  margin: 0 0 0.5rem 0;
-  color: var(--accent);
-  text-transform: uppercase;
-}
-
-.popup-text {
-  font-size: 0.9rem;
-  color: var(--muted);
-  margin-bottom: 1.2rem;
-}
-
-/* Lógica de Fechar */
+/* Lógica para fechar */
 .popup-toggle:checked ~ .popup-overlay {
   display: none !important;
 }
 
+/* Animação de entrada suave */
 @keyframes popupEntrance {
-  from { opacity: 0; transform: translateY(30px) scale(0.9); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* AJUSTE PARA TELEMÓVEL: Se o ecrã for pequeno, a imagem foca na largura */
+@media (max-width: 600px) {
+  .popup-img-full {
+    height: auto;
+    width: 90vw;
+    max-height: 85vh;
+  }
 }
