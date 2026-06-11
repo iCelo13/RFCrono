@@ -7,23 +7,23 @@
   <link rel="stylesheet" href="styles.css" /> 
 </head>
 <body>
+  <input type="checkbox" id="fechar-popup-cartaz" style="display: none;">
 
- <!--input type="checkbox" id="close-popup" class="popup-toggle" autocomplete="off" />
+  <div class="popup-cartaz-wrapper">
+    <label for="fechar-popup-cartaz" class="popup-cartaz-fundo"></label>
 
-<div class="popup-overlay">
-  <div class="popup-card">
-    <!-- Botão X no canto da imagem >
-    <label for="close-popup" class="popup-close-wrapper">
-      <span class="popup-close-icon">&times;</span>
-</label-->
-    
-    <!-- Imagem direta >
-    <img src="images/WhatsApp Image 2026-05-14 at 17.45.53.jpeg" alt="Evento RF Cronometragem" class="popup-img-full" />
+    <div class="popup-cartaz-conteudo">
+      <label for="fechar-popup-cartaz" class="popup-cartaz-fechar">
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </label>
+      
+      <img src="images/WhatsApp Image 2026-04-22 at 14.00.01.jpeg" alt="Cartaz Próximo Evento">
+    </div>
   </div>
-</div-->
 
-  <!--header class="site-header"-->
-    
   <header class="site-header">
     <div class="container header__inner">
       <a class="logo" href="#">RF CRONOMETRAGEM</a>
@@ -136,41 +136,31 @@
       </div>
     </section>
 
-    <!--section id="resultados" class="section section--light">
+    <section id="resultados" class="section section--light">
       <div class="container">
         <h2 class="section__title">Resultados Oficiais</h2>
         <p class="section__lead">Aceda aos documentos oficiais de tempos e classificações.</p>
 
         <div class="results-list">
+
           <article class="result-item">
             <div class="result-info">
-              <h3 class="result-title">Rali de Fafe - 2ª Prova Campeonato Nacional</h3>
-              <p class="result-meta">Data: 10 de Março de 2025 | <span class="result-status status-final">Resultados Finais</span></p>
+              <h3 class="result-title">Convívio Resistência 2 Horas Alto Pegadinha</h3>
+              <p class="result-meta">Data: 24 de Abril de 2026 | <span class="result-status status-provisional">Provisórios</span></p>
             </div>
-            <a href="resultados/fafe_2025_final.pdf" target="_blank" class="btn btn--secondary">Ver PDF</a>
+            <a href="#convivio-resistencia-2-horas-alto-pegadinha" class="btn btn--secondary">Ver PDFs</a>
           </article>
 
           <article class="result-item">
             <div class="result-info">
-              <h3 class="result-title">Campeonato Motocross Sul - Etapa 4</h3>
-              <p class="result-meta">Data: 28 de Fevereiro de 2025 | <span class="result-status status-provisional">Provisórios</span></p>
+              <h3 class="result-title">Troféu Norte 2026</h3>
+              <p class="result-meta">Data: 26 de Abril de 2026 | <span class="result-status status-final">Resultados Finais</span></p>
             </div>
-            <a href="resultados/motocross_etapa4_provisorio.pdf" target="_blank" class="btn btn--secondary">Ver PDF</a>
-          </article>
-          
-          <article class="result-item">
-            <div class="result-info">
-              <h3 class="result-title">Endurance TT - 6 Horas de Resistência</h3>
-              <p class="result-meta">Data: 15 de Janeiro de 2025 | <span class="result-status status-final">Resultados Finais</span></p>
-            </div>
-            <a href="resultados/endurance_6horas_final.pdf" target="_blank" class="btn btn--secondary">Ver PDF</a>
+            <a href="#trofeu-norte-2026" class="btn btn--secondary">Ver PDFs</a>
           </article>
 
         </div>
-        
         <p class="section__lead section__lead--small">Os documentos estão sujeitos a confirmação dos organizadores.</p>
-      </div>
-    </section-->
 
     <section id="portefolio" class="section">
       <div class="container">
@@ -362,6 +352,113 @@
     updateCountdown(); 
   </script>
 
-  <header class="site-header">
+        <div id="trofeu-norte-2026" class="folder-modal">
+          <a href="#resultados" class="folder-modal__overlay" tabindex="-1"></a>
+          
+          <div class="folder-modal__content">
+            <div class="folder-modal__header">
+              <div>
+                <span class="folder-modal__eyebrow">Documentos de Resultados</span>
+                <h3 class="folder-modal__title">Troféu Norte 2026</h3>
+              </div>
+              <a href="#resultados" class="folder-modal__close" aria-label="Fechar">&times;</a>
+            </div>
+            <div class="folder-modal__body">
+              
+              <a href="resultados/Troféu Norte 2026/1 Manga Hobby 2Tempos.pdf" target="_blank" class="folder-link">
+                <span>1ª Manga Hobby 2 Tempos</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+              
+              <a href="resultados/Troféu Norte 2026/1ª Manga QX.pdf" target="_blank" class="folder-link">
+                <span>1ª Manga QX</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+              
+              <a href="resultados/Troféu Norte 2026/1ªManga - Mx Open.pdf" target="_blank" class="folder-link">
+                <span>1ªManga - Mx Open</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+
+              <a href="resultados/Troféu Norte 2026/2ª Manga Mx Open.pdf" target="_blank" class="folder-link">
+                <span>2ª Manga Mx Open</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+              
+              <a href="resultados/Troféu Norte 2026/2ª Manga QX.pdf" target="_blank" class="folder-link">
+                <span>2ª Manga QX</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+              
+              <a href="resultados/Troféu Norte 2026/2º Manga Hobby 2Tempos.pdf" target="_blank" class="folder-link">
+                <span>2ª Manga Hobby 2 Tempos</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+
+              <a href="resultados/Troféu Norte 2026/Geral Hobby 2 Tempos.pdf" target="_blank" class="folder-link">
+                <span>Geral Hobby 2 Tempos</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+              
+              <a href="resultados/Troféu Norte 2026/Geral Mx Open.pdf" target="_blank" class="folder-link">
+                <span>Geral Mx Open</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+              
+              <a href="resultados/Troféu Norte 2026/Geral QX.pdf" target="_blank" class="folder-link">
+                <span>Geral QX</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+              
+              <a href="resultados/Troféu Norte 2026/Treinos Cronometrados Mx Open.pdf" target="_blank" class="folder-link">
+                <span>Treinos Cronometrados Mx Open</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+
+              <a href="resultados/Troféu Norte 2026/Treinos Livres Cronometrados.pdf" target="_blank" class="folder-link">
+                <span>Treinos Livres Cronometrados</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+              
+              <a href="resultados/Troféu Norte 2026/Treinos Livres Mx Open.pdf" target="_blank" class="folder-link">
+                <span>Treinos Livres Mx Open</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+              
+              <a href="resultados/Troféu Norte 2026/Treinos Livres PICO.pdf" target="_blank" class="folder-link">
+                <span>Treinos Livres PICO</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+
+              <a href="resultados/Troféu Norte 2026/Treinos QX Cronometrados.pdf" target="_blank" class="folder-link">
+                <span>Treinos QX Cronometrados</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="convivio-resistencia-2-horas-alto-pegadinha" class="folder-modal">
+          <a href="#resultados" class="folder-modal__overlay" tabindex="-1"></a>
+          
+          <div class="folder-modal__content">
+            <div class="folder-modal__header">
+              <div>
+                <span class="folder-modal__eyebrow">Documentos de Resultados</span>
+                <h3 class="folder-modal__title">Convívio Resistência 2 Horas Alto Pegadinha</h3>
+              </div>
+              <a href="#resultados" class="folder-modal__close" aria-label="Fechar">&times;</a>
+            </div>
+            <div class="folder-modal__body">
+              
+              <a href="resultados/Alto Pegadinha/Geral Auto Pegadinha.pdf" target="_blank" class="folder-link">
+                <span>Corrida</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
