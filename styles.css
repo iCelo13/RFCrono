@@ -481,84 +481,463 @@ input,textarea{
 
 /* --- POP-UP FOCO NA IMAGEM --- */
 
-.popup-overlay {
-  position: fixed !important;
-  inset: 0 !important;
-  background: rgba(0, 0, 0, 0.95) !important; /* Fundo mais escuro para destacar o poster */
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  z-index: 999999 !important;
-  backdrop-filter: blur(5px);
+.popup-check {
+  display: none !important;
 }
 
-.popup-card {
-  position: relative;
-  /* O card agora ajusta-se à largura da imagem automaticamente */
-  width: auto; 
-  max-width: 95%; /* Segurança para não cortar nas laterais em telemóveis */
+/* O Pop-up começa VISÍVEL por defeito */
+.welcome-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 9999999;
+  background: rgba(10, 15, 30, 0.85); /* Tom escuro azulado */
+  backdrop-filter: blur(8px);
   display: flex;
-  flex-direction: column;
-  animation: popupEntrance 0.4s ease-out;
+  align-items: center;
+  justify-content: center;
+  overscroll-behavior: contain; /* Evita que a página de trás faça scroll */
+  
+  /* Transição suave para quando desaparecer */
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  visibility: visible;
 }
 
-.popup-img-full {
-  display: block;
-  /* Altura de 90% da tela para deixar um pequeno respiro em cima e em baixo */
-  height: 90vh; 
-  width: auto; /* Mantém a proporção original da imagem sem distorcer */
+.welcome-popup__content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 85vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Fica à frente do fundo clicável */
+}
+
+.welcome-popup__img {
   max-width: 100%;
-  border-radius: 8px; /* Leve arredondamento para condizer com o teu design */
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.7);
 }
 
-/* BOTÃO X (Mantido o design anterior, ajustado à posição da imagem) */
-.popup-close-wrapper {
+/* Botão de Fechar Estilizado (Agora é um Label) */
+.welcome-popup__close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -15px;
+  right: -15px;
   width: 44px;
   height: 44px;
   background: linear-gradient(135deg, var(--accent), var(--accent-600));
+  color: white;
+  border: 2px solid white;
   border-radius: 50%;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease;
+  user-select: none;
+}
+
+.welcome-popup__close:hover {
+  transform: scale(1.1);
+}
+
+/* Fundo invisível mas clicável para fechar ao carregar fora da imagem */
+.welcome-popup__overlay-close {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.popup-check:checked ~ .welcome-popup {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Ajuste para telemóveis */
+@media (max-width: 600px) {
+  .welcome-popup__close {
+    top: -10px;
+    right: -10px;
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+  }
+}
+
+/* --- Resultados Oficiais (Acordeão com details/summary) --- */
+
+.results-list {
+  display: grid;
+  gap: 1.2rem; 
+  max-width: 900px; 
+  margin: 0 auto 2rem auto;
+}
+
+.result-item {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.2s ease;
+  overflow: hidden; /* Garante que o conteúdo não sai fora dos cantos arredondados */
+}
+
+.result-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Remover a seta nativa horrível do summary */
+.result-details summary {
+  list-style: none;
+}
+.result-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.result-summary {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  padding: 1.25rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.result-info {
+  flex-grow: 1; 
+  margin-bottom: 1rem; 
+}
+
+.result-title {
+  font-size: 1.15rem;
+  margin: 0 0 0.25rem 0;
+  color: var(--text);
+}
+
+.result-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.result-status {
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.status-final {
+  background: rgba(34, 197, 94, 0.15); 
+  color: #22c55e;
+}
+
+.status-provisional {
+  background: rgba(251, 191, 36, 0.15); 
+  color: #fcae12;
+}
+
+/* Botão do Summary com a Seta */
+.summary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.05); /* Um visual mais discreto inicialmente */
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.dropdown-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Quando o details está aberto, a seta roda e o botão ganha destaque */
+.result-details[open] .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.result-details[open] .summary-btn {
+  background: var(--accent-600);
+  border-color: var(--accent-600);
+  color: white;
+}
+
+/* Sub-secção dos botões de cada sessão */
+.result-sessions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  margin-top: 0.5rem;
+  padding-top: 1.25rem;
+}
+
+.session-link {
+  display: block;
+  background: #111827; /* Fundo mais escuro */
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  border: 1px solid rgba(255,255,255,0.02);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.session-link:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateX(5px); /* Pequeno efeito de deslize */
+}
+
+/* Destaque especial para a Classificação Geral */
+.session-link--highlight {
+  background: rgba(59, 130, 246, 0.1); /* Fundo ligeiramente azul */
+  color: var(--accent);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Layout para Ecrãs Maiores */
+@media (min-width: 720px) {
+  .result-summary {
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .result-info {
+    margin-bottom: 0;
+  }
+
+  .result-sessions {
+    grid-template-columns: repeat(4, 1fr); /* Coloca os 4 treinos lado a lado */
+  }
+}
+
+/* --- PASTA MODAL DE RESULTADOS (CSS ONLY) --- */
+
+.folder-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: none; /* Escondido por defeito */
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overscroll-behavior: contain;
+}
+
+/* Ativa o modal quando o ID for o :target */
+.folder-modal:target {
+  display: flex; 
+}
+
+.folder-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 15, 30, 0.85); /* Tom escuro azulado */
+  backdrop-filter: blur(6px); /* Efeito de desfoque de fundo */
+  cursor: default;
+}
+
+.folder-modal__content {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  /* Cor inspirada no teu rascunho */
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  border-radius: 16px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  /* Limita a altura a 85% do ecrã. Essencial para não bugar com 18 ficheiros! */
+  max-height: 85vh; 
+  animation: folderFadeIn 0.3s ease-out;
+  z-index: 1; 
+}
+
+/* Header do Modal */
+.folder-modal__header {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.folder-modal__eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #38bdf8; /* Azul claro para "Documentos de Resultados" */
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.folder-modal__title {
+  font-size: 1.4rem;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.folder-modal__close {
+  color: var(--muted);
+  font-size: 1.5rem;
+  text-decoration: none;
+  line-height: 1;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.folder-modal__close:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Área de Lista de Ficheiros com Scroll */
+.folder-modal__body {
+  padding: 1.25rem;
+  overflow-y: auto; /* Esta é a magia para os 18 ficheiros: permite fazer scroll */
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Customizar o Scrollbar da pasta */
+.folder-modal__body::-webkit-scrollbar {
+  width: 6px;
+}
+.folder-modal__body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.folder-modal__body::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+}
+
+/* Linhas dos Links */
+.folder-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  transition: all 0.2s ease;
+}
+
+.folder-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px); /* Desliza ligeiramente para a direita */
+}
+
+.folder-link__arrow {
+  color: rgba(255, 255, 255, 0.2);
+  transition: color 0.2s ease;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.folder-link:hover .folder-link__arrow {
+  color: #38bdf8; /* A seta fica azul brilhante no hover */
+}
+
+/* Animação suave a entrar */
+@keyframes folderFadeIn {
+  from { opacity: 0; transform: translateY(20px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.popup-cartaz-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85); /* Fundo bem escuro */
+  backdrop-filter: blur(3px); /* Ligeiro desfoque */
+}
+
+/* O "Pulo do Gato": Quando a checkbox é ativada, a janela inteira desaparece */
+#fechar-popup-cartaz:checked ~ .popup-cartaz-wrapper {
+  display: none;
+}
+
+/* Camada invisível que ocupa o ecrã todo para fechar ao clicar fora */
+.popup-cartaz-fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* A caixa branca à volta da imagem */
+.popup-cartaz-conteudo {
+  position: relative;
+  z-index: 2; /* Fica acima do fundo clicável */
+  background: #ffffff;
+  padding: 6px; /* Cria a margem branca que se vê no teu print */
+  border-radius: 2px;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+.popup-cartaz-conteudo img {
+  max-width: 100%;
+  /* Garante que a imagem nunca ultrapassa a altura do ecrã e não distorce */
+  max-height: calc(90vh - 12px); 
+  object-fit: contain;
+  display: block;
+}
+
+/* O botão X no canto */
+.popup-cartaz-fechar {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 32px;
+  height: 32px;
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff; /* Borda branca do botão */
+  border-radius: 50%; /* Faz o botão ficar redondo */
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 1000;
-  border: 2px solid white;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
   transition: transform 0.2s ease;
 }
 
-.popup-close-wrapper:hover {
-  transform: scale(1.1);
-}
-
-.popup-close-icon {
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-/* Lógica para fechar */
-.popup-toggle:checked ~ .popup-overlay {
-  display: none !important;
-}
-
-/* Animação de entrada suave */
-@keyframes popupEntrance {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-/* AJUSTE PARA TELEMÓVEL: Se o ecrã for pequeno, a imagem foca na largura */
-@media (max-width: 600px) {
-  .popup-img-full {
-    height: auto;
-    width: 90vw;
-    max-height: 85vh;
-  }
+.popup-cartaz-fechar:hover {
+  transform: scale(1.1); /* Dá um pequeno efeito ao passar o rato */
 }
