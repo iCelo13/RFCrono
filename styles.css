@@ -907,15 +907,13 @@ input,textarea{
   border-radius: 2px;
   max-width: 90vw;
   max-height: 90vh;
-  width: auto;       
-  height: auto;
   display: flex;
   box-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
 
 .popup-cartaz-conteudo img {
   display: block; /* Remove espaços em branco invisíveis */
-  width: auto;    /* Garante que ocupa a largura disponível */
+  width: 100%;    /* Garante que ocupa a largura disponível */
   height: auto;   /* Mantém a proporção correta */
   max-width: 100%;
   max-height: 85vh;
