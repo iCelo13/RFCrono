@@ -912,13 +912,14 @@ input,textarea{
 }
 
 .popup-cartaz-conteudo img {
+  display: block; /* Remove espaços em branco invisíveis */
+  width: 100%;    /* Garante que ocupa a largura disponível */
+  height: auto;   /* Mantém a proporção correta */
   max-width: 100%;
-  /* Garante que a imagem nunca ultrapassa a altura do ecrã e não distorce */
-  max-height: calc(90vh - 12px); 
-  object-fit: contain;
-  display: block;
+  max-height: 85vh;
+  object-fit: contain; /* Isto é a chave: não corta a imagem, ajusta-a */
+  background-color: transparent; /* Caso a imagem seja transparente */
 }
-
 /* O botão X no canto */
 .popup-cartaz-fechar {
   position: absolute;
