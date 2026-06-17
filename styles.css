@@ -17,7 +17,13 @@
 
 /* --- Reset --- */
 * { box-sizing: border-box; }
-html, body { height: 100%; }
+html, body { 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
 body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
@@ -361,13 +367,23 @@ input, textarea {
   color: var(--muted);
 }
 .footer__inner {
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 1rem;
+  flex-direction: column;
+  text-align: center;
 }
 .footer__links { list-style: none; margin: 0; padding: 0; display: flex; gap: .75rem; }
 .footer__links a { color: var(--muted); text-decoration: none; font-size: .95rem; }
 
 /* --- Layouts Maiores --- */
 @media(min-width:900px){
+  .footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
   .hero__inner { grid-template-columns: 1fr 480px; }
   .nav { position: static; opacity: 1; transform: none; pointer-events: auto;
     background: transparent; padding: 0; width: auto; max-width: none; box-shadow: none; }
