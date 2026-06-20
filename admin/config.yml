@@ -1,0 +1,59 @@
+backend:
+  name: github
+  repo: iCelo13/RFCrono
+  branch: main
+
+media_folder: "images" # Para onde vão as imagens dos cartazes e parceiros
+public_folder: "images"
+
+collections:
+  # 1. CONTADOR DA PRÓXIMA PROVA
+  - name: "contador"
+    label: "1. Contador da Próxima Prova"
+    files:
+      - label: "Configurar Contador"
+        name: "config_contador"
+        file: "dados/contador.json"
+        fields:
+          - {label: "Nome do Evento", name: "nome", widget: "string", hint: "Ex: Gincana de Tratores"}
+          - {label: "Data e Hora do Evento", name: "data", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ss", hint: "Formato importante para o script funcionar"}
+
+  # 2. PRÓXIMOS EVENTOS (Os 3 cartazes com imagem, título e data)
+  - name: "proximos_eventos"
+    label: "2. Cartazes (Próximos Eventos)"
+    folder: "dados/proximos_eventos"
+    create: true
+    extension: "json"
+    fields:
+      - {label: "Título da Prova", name: "titulo", widget: "string"}
+      - {label: "Data (Texto)", name: "data_texto", widget: "string", hint: "Ex: 21-06-2026"}
+      - {label: "Imagem do Cartaz", name: "imagem", widget: "image"}
+
+  # 3. RESULTADOS OFICIAIS (Gera os Modais e as listas de links para os PDFs)
+  - name: "resultados"
+    label: "3. Resultados (Modais & PDFs)"
+    folder: "dados/resultados"
+    create: true
+    extension: "json"
+    fields:
+      - {label: "Nome Oficial da Prova", name: "prova", widget: "string", hint: "Ex: Racing Fest 2026"}
+      - {label: "Data da Prova", name: "data_texto", widget: "string", hint: "Ex: 13 de Junho de 2026"}
+      - {label: "Estado", name: "status", widget: "select", options: ["Resultados Finais", "Resultados Provisórios"]}
+      - label: "Lista de Documentos PDF"
+        name: "pdfs"
+        widget: "list"
+        summary: "{{fields.nome_sessao}}"
+        fields:
+          - {label: "Nome da Manga / Sessão", name: "nome_sessao", widget: "string", hint: "Ex: Super Enduro Open"}
+          - {label: "Ficheiro PDF", name: "ficheiro", widget: "file", media_folder: "resultados", public_folder: "resultados"}
+
+  # 4. EVENTOS RECENTES (Os 6 blocos de Portefólio no fim da página)
+  - name: "eventos_passados"
+    label: "4. Eventos Recentes (Portefólio)"
+    folder: "dados/eventos_passados"
+    create: true
+    extension: "json"
+    fields:
+      - {label: "Título do Evento", name: "titulo", widget: "string"}
+      - {label: "Data de Realização", name: "data_texto", widget: "string", hint: "Ex: 14-06-2026"}
+      - {label: "Fotografia", name: "imagem", widget: "image"}
