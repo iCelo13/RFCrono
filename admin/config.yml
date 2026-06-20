@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: iCelo13/RFCrono
-  branch: main
+  name: git-gateway
+  branch: main # Altera para master se a tua branch principal no GitHub se chamar master
 
 media_folder: "images" # Para onde vão as imagens dos cartazes e parceiros
 public_folder: "images"
@@ -16,7 +15,7 @@ collections:
         file: "dados/contador.json"
         fields:
           - {label: "Nome do Evento", name: "nome", widget: "string", hint: "Ex: Gincana de Tratores"}
-          - {label: "Data e Hora do Evento", name: "data", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ss", hint: "Formato importante para o script funcionar"}
+          - {label: "Data e Hora do Evento", name: "data", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ss"}
 
   # 2. PRÓXIMOS EVENTOS (Os 3 cartazes com imagem, título e data)
   - name: "proximos_eventos"
@@ -36,15 +35,15 @@ collections:
     create: true
     extension: "json"
     fields:
-      - {label: "Nome Oficial da Prova", name: "prova", widget: "string", hint: "Ex: Racing Fest 2026"}
-      - {label: "Data da Prova", name: "data_texto", widget: "string", hint: "Ex: 13 de Junho de 2026"}
+      - {label: "Nome Oficial da Prova", name: "prova", widget: "string"}
+      - {label: "Data da Prova", name: "data_texto", widget: "string"}
       - {label: "Estado", name: "status", widget: "select", options: ["Resultados Finais", "Resultados Provisórios"]}
       - label: "Lista de Documentos PDF"
         name: "pdfs"
         widget: "list"
         summary: "{{fields.nome_sessao}}"
         fields:
-          - {label: "Nome da Manga / Sessão", name: "nome_sessao", widget: "string", hint: "Ex: Super Enduro Open"}
+          - {label: "Nome da Manga / Sessão", name: "nome_sessao", widget: "string"}
           - {label: "Ficheiro PDF", name: "ficheiro", widget: "file", media_folder: "resultados", public_folder: "resultados"}
 
   # 4. EVENTOS RECENTES (Os 6 blocos de Portefólio no fim da página)
@@ -55,5 +54,5 @@ collections:
     extension: "json"
     fields:
       - {label: "Título do Evento", name: "titulo", widget: "string"}
-      - {label: "Data de Realização", name: "data_texto", widget: "string", hint: "Ex: 14-06-2026"}
+      - {label: "Data de Realização", name: "data_texto", widget: "string"}
       - {label: "Fotografia", name: "imagem", widget: "image"}
