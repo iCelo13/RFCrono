@@ -21,7 +21,7 @@
         </svg>
       </label>
       
-      <img src="images/WhatsApp Image 2026-06-10 at 17.47.29.jpeg" alt="Cartaz Próximo Evento">
+      <img src="images/WhatsApp Image 2026-07-07 at 22.27.07.jpeg" alt="Cartaz Próximo Evento">
     </div>
   </div>
 
@@ -123,10 +123,10 @@
           
 
           <figure class="gallery__item">
-            <img src="images/WhatsApp Image 2026-06-10 at 17.47.29.jpeg" alt="Próximo Evento 4 — screenshot" />
+            <img src="images/WhatsApp Image 2026-07-07 at 22.27.07.jpeg" alt="Próximo Evento 4 — screenshot" />
             <figcaption>
-              <span class="evento-titulo">Resistência Scrambler Cross</span> 
-              <span class="evento-data">28-06-2026</span>
+              <span class="evento-titulo">Parada de Pinhão</span> 
+              <span class="evento-data">25-07-2026</span>
             </figcaption>
           </figure>         
         </div>
@@ -171,6 +171,22 @@
             </div>
             <a href="#gincana" class="btn btn--secondary">Ver PDFs</a>
           </article>
+
+          <article class="result-item">
+            <div class="result-info">
+              <h3 class="result-title">Motocross Noturno</h3>
+              <p class="result-meta">Data: 27 de Junho de 2026 | <span class="result-status status-final">Resultados Finais</span></p>
+            </div>
+            <a href="#motocross-noturno" class="btn btn--secondary">Ver PDFs</a>
+          </article>
+
+          <article class="result-item">
+            <div class="result-info">
+              <h3 class="result-title">Resistência Scrambler Cross</h3>
+              <p class="result-meta">Data: 28 de Junho de 2026 | <span class="result-status status-final">Resultados Finais</span></p>
+            </div>
+            <a href="#scrambler-cross" class="btn btn--secondary">Ver PDFs</a>
+          </article>
           
         <div class="results-list">
         </div>
@@ -183,6 +199,14 @@
 
         <div class="gallery">
           
+          <figure class="gallery__item">
+            <img src="images/WhatsApp Image 2026-06-10 at 17.47.29.jpeg" alt="Próximo Evento 4 — screenshot" />
+            <figcaption>
+              <span class="evento-titulo">Resistência Scrambler Cross</span> 
+              <span class="evento-data">28-06-2026</span>
+            </figcaption>
+          </figure>
+
           <figure class="gallery__item">
             <img src="images/WhatsApp Image 2026-06-16 at 19.51.09.jpeg" alt="Próximo Evento 4 — screenshot" />
             <figcaption>
@@ -222,15 +246,6 @@
               <span class="evento-data">31-05-2026</span>
             </figcaption>
           </figure>
-          
-          <figure class="gallery__item">
-            <img src="images/WhatsApp Image 2026-05-14 at 17.45.53.jpeg" alt="Próximo Evento 4 — screenshot" />
-            <figcaption>
-              <span class="evento-titulo">Convívio/Resistência</span>
-              <span class="evento-data">24-05-2026</span>
-            </figcaption>
-          </figure>
-
         </div>
       </div>
     </section>
@@ -353,8 +368,8 @@
     const countdownStatusElement = document.getElementById('countdownStatus');
 
     // ** IMPORTANTE: Altere esta data e nome para o seu próximo evento **
-    const nextEventDate = new Date('2026-06-28T09:00:00').getTime(); 
-    const nextEventName = 'Resistência Scrambler Cross'; 
+    const nextEventDate = new Date('2026-07-25T09:00:00').getTime(); 
+    const nextEventName = 'Parada de Pinhão'; 
     // ------------------------------------------------------------------
     
     eventNameElement.textContent = nextEventName;
@@ -561,6 +576,76 @@
               
               <a href="Gincana/Geral de Tratores.pdf" target="_blank" class="folder-link">
                 <span>Geral de Tratores</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="motocross-noturno" class="folder-modal">
+          <a href="#resultados" class="folder-modal__overlay" tabindex="-1"></a>
+          
+          <div class="folder-modal__content">
+            <div class="folder-modal__header">
+              <div>
+                <span class="folder-modal__eyebrow">Documentos de Resultados</span>
+                <h3 class="folder-modal__title">Motocross Noturno</h3>
+              </div>
+              <a href="#resultados" class="folder-modal__close" aria-label="Fechar">&times;</a>
+            </div>
+            <div class="folder-modal__body">
+              
+              <a href="Motocross Noturno\Geral Hobby.pdf" target="_blank" class="folder-link">
+                <span>Geral Hobby</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+
+              <a href="Motocross Noturno\Mx 50 C Radiador.pdf" target="_blank" class="folder-link">
+                <span>Mx 50 C Radiador</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+
+              <a href="Motocross Noturno\Mx 50cc Livres.pdf" target="_blank" class="folder-link">
+                <span>Mx 50cc Livres</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+
+              <a href="Motocross Noturno\Mx 50cc S Radiador Mx 50 Classicas.pdf" target="_blank" class="folder-link">
+                <span>Mx 50cc S Radiador Mx 50 Classicas</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+
+              <a href="Motocross Noturno\Mx Pro.pdf" target="_blank" class="folder-link">
+                <span>Mx Pro</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="scrambler-cross" class="folder-modal">
+          <a href="#resultados" class="folder-modal__overlay" tabindex="-1"></a>
+          
+          <div class="folder-modal__content">
+            <div class="folder-modal__header">
+              <div>
+                <span class="folder-modal__eyebrow">Documentos de Resultados</span>
+                <h3 class="folder-modal__title">Racing Fest</h3>
+              </div>
+              <a href="#resultados" class="folder-modal__close" aria-label="Fechar">&times;</a>
+            </div>
+            <div class="folder-modal__body">
+              
+              <a href="Scrambler Cross\Geral QX.pdf" target="_blank" class="folder-link">
+                <span>Geral QX</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+
+              <a href="Scrambler Cross\Geral Resistencia.pdf" target="_blank" class="folder-link">
+                <span>Geral Resistencia</span>
+                <span class="folder-link__arrow">&rarr;</span>
+              </a>
+
+              <a href="Scrambler Cross\Treinos Sprint.pdf" target="_blank" class="folder-link">
+                <span>Treinos Sprint</span>
                 <span class="folder-link__arrow">&rarr;</span>
               </a>
             </div>
