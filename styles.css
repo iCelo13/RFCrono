@@ -321,7 +321,7 @@ body {
 }
 .sponsor-track {
   display: flex;
-  width: calc(200%); 
+  width: max-content; 
   animation: scroll 25s linear infinite; 
 }
 .sponsor-track img {
@@ -329,6 +329,7 @@ body {
   margin: 0 3rem;
   opacity: 0.8;
   transition: opacity 0.3s ease;
+  flex-shrink: 0;
 }
 .sponsor-track img:hover { opacity: 1; }
 @keyframes scroll {
