@@ -209,6 +209,6 @@ const DADOS = {
   contactos: {
     telefone: '+351 935 603 040',
     localizacao: 'Porto, Portugal',
-    emailFormulario: 'meduardofcabral@gmail.com'
+    emailFormulario: 'rfcronometragem@gmail.com'
   }
 };
