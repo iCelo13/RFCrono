@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mensagem enviada — RF Cronometragem</title>
+  <meta name="description" content="Recebemos a sua mensagem. Entramos em contacto o mais brevemente possível." />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <link rel="icon" href="img/logo-rf-cronometragem.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Oswald:wght@500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo-rf-cronometragem.jpeg" alt="" width="36" height="36" class="logo__img" />
+        <span>RF Cronometragem</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="card" style="max-width: 640px; margin: 0 auto; text-align: center;">
+          <h1 class="section__title">Mensagem enviada</h1>
+          <p class="section__lead">
+            Obrigado pelo seu contacto. Recebemos o seu pedido e respondemos o mais
+            brevemente possível.
+          </p>
+          <p class="section__lead">
+            Se for urgente, ligue para <a href="tel:+351935603040" style="color: var(--accent); text-decoration: none;">+351 935 603 040</a>.
+          </p>
+          <p style="margin-top: 1.5rem;">
+            <a href="index.html" class="btn btn--secondary">Voltar ao início</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> RF Cronometragem — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

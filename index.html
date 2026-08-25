@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>RF Cronometragem — Cronometragem desportiva</title>
+  <meta name="description" content="Cronometragem desportiva para rali, motocross, enduro e resistência. Tempos fiáveis ao milésimo de segundo e resultados em tempo real." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <link rel="canonical" href="https://rfcronometragem.pt/" />
+
+  <!-- Partilha em WhatsApp, Facebook, etc. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RF Cronometragem" />
+  <meta property="og:title" content="RF Cronometragem — Cronometragem desportiva" />
+  <meta property="og:description" content="Tempos fiáveis ao milésimo de segundo, com resultados em tempo real." />
+  <meta property="og:url" content="https://rfcronometragem.pt/" />
+  <meta property="og:image" content="https://rfcronometragem.pt/img/logo-rf-cronometragem.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="img/logo-rf-cronometragem.jpeg" />
+  <link rel="apple-touch-icon" href="img/logo-rf-cronometragem.jpeg" />
+
+  <!-- Tipos de letra usados pelo styles.css (Oswald nos títulos, Inter no texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Oswald:wght@500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===================================================================
+       POPUP DE ENTRADA — o cartaz é definido em js/dados.js (secção 1)
+       =================================================================== -->
+  <input type="checkbox" id="fechar-popup-cartaz" class="popup-cartaz-check" />
+
+  <div class="popup-cartaz-wrapper" id="popupCartaz" hidden>
+    <label for="fechar-popup-cartaz" class="popup-cartaz-fundo" aria-label="Fechar"></label>
+
+    <div class="popup-cartaz-conteudo">
+      <label for="fechar-popup-cartaz" class="popup-cartaz-fechar" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </label>
+
+      <img id="popupCartazImg" src="" alt="" />
+    </div>
+  </div>
+
+
+  <!-- ===================================================================
+       CABEÇALHO
+       =================================================================== -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="#home">
+        <img src="img/logo-rf-cronometragem.jpeg" alt="" width="36" height="36" class="logo__img" />
+        <span>RF Cronometragem</span>
+      </a>
+
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu">
+        <span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Início</a></li>
+          <li class="nav__item"><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li class="nav__item"><a href="#proximos-eventos" class="nav__link">Próximos Eventos</a></li>
+          <li class="nav__item"><a href="#resultados" class="nav__link">Resultados</a></li>
+          <li class="nav__item"><a href="#portefolio" class="nav__link">Portefólio</a></li>
+          <li class="nav__item"><a href="#patrocinadores" class="nav__link">Parceiros</a></li>
+          <li class="nav__item"><a href="#contactos" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================ INÍCIO ============================ -->
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">RF Cronometragem desportiva</h1>
+          <p class="hero__subtitle">
+            Garantimos tempos fiáveis ao milésimo de segundo, com resultados em tempo real.
+          </p>
+          <div class="hero__actions">
+            <a href="#servicos" class="btn btn--primary">Ver serviços</a>
+            <a href="#proximos-eventos" class="btn btn--ghost">Próximos Eventos</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="countdown-card">
+            <div class="countdown-header">
+              <svg class="timer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm.01 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7h-.5z" />
+              </svg>
+              <span>Próxima Prova</span>
+            </div>
+
+            <div class="countdown-body">
+              <p class="event-name" id="eventName">—</p>
+              <p class="event-date" id="eventDate">—</p>
+
+              <div class="countdown-timer" id="countdownTimer">
+                <span class="countdown-value" id="countdownDays">0</span>
+                <span class="countdown-label">Dias</span>
+                <span class="countdown-value" id="countdownHours">00</span>
+                <span class="countdown-label">Horas</span>
+                <span class="countdown-value" id="countdownMinutes">00</span>
+                <span class="countdown-label">Mins</span>
+                <span class="countdown-value" id="countdownSeconds">00</span>
+                <span class="countdown-label">Segs</span>
+              </div>
+
+              <p class="countdown-status" id="countdownStatus"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================== SERVIÇOS =========================== -->
+    <section id="servicos" class="section section--light">
+      <div class="container">
+        <h2 class="section__title">Serviços</h2>
+        <p class="section__lead">Especializados em cronometragem desportiva para diferentes modalidades.</p>
+
+        <div class="grid grid--3up">
+          <article class="card">
+            <h3 class="card__title">Rali</h3>
+            <p class="card__text">Cronometragem precisa em provas de rali, com controlo de especiais e splits.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Motocross e Endurance</h3>
+            <p class="card__text">Gestão completa de tempos em corridas off-road, com resultados live.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Gestão de Resultados</h3>
+            <p class="card__text">Documentos oficiais de treinos, mangas e classificações, prontos a publicar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================= PRÓXIMOS EVENTOS ======================= -->
+    <section id="proximos-eventos" class="section">
+      <div class="container">
+        <h2 class="section__title">Próximos Eventos</h2>
+        <p class="section__lead">Fique a par das próximas provas onde estaremos presentes. Clique num cartaz para o ver em grande.</p>
+
+        <!-- Preenchido a partir de js/dados.js -->
+        <div class="gallery" id="galeriaProximos"></div>
+      </div>
+    </section>
+
+
+    <!-- ========================== RESULTADOS ========================== -->
+    <section id="resultados" class="section section--light">
+      <div class="container">
+        <h2 class="section__title">Resultados Oficiais</h2>
+        <p class="section__lead">Aceda aos documentos oficiais de tempos e classificações.</p>
+
+        <!-- Preenchido a partir de js/dados.js -->
+        <div class="results-list" id="listaResultados"></div>
+
+        <p class="section__lead section__lead--small">Os documentos estão sujeitos a confirmação dos organizadores.</p>
+      </div>
+    </section>
+
+
+    <!-- ========================== PORTEFÓLIO ========================== -->
+    <section id="portefolio" class="section">
+      <div class="container">
+        <h2 class="section__title">Eventos Recentes</h2>
+        <p class="section__lead">Os nossos projetos recentes. Clique num cartaz para o ver em grande.</p>
+
+        <!-- Preenchido a partir de js/dados.js -->
+        <div class="gallery" id="galeriaRecentes"></div>
+      </div>
+    </section>
+
+
+    <!-- ========================== PARCEIROS =========================== -->
+    <section id="patrocinadores" class="section section--light">
+      <div class="container">
+        <h2 class="section__title section__title--center">Parceiros Oficiais</h2>
+        <p class="section__lead section__lead--center">Contamos com o apoio de marcas líderes no desporto motorizado.</p>
+
+        <div class="sponsor-carousel">
+          <!-- Preenchido a partir de js/dados.js -->
+          <div class="sponsor-track" id="faixaPatrocinadores"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================== CONTACTOS =========================== -->
+    <section id="contactos" class="section section--dark">
+      <div class="container contact">
+        <div class="contact__card">
+          <h2 class="section__title">Fale Connosco</h2>
+          <p class="section__lead">Peça já um orçamento para a sua prova.</p>
+
+          <form class="form" id="formContacto" action="https://formsubmit.co/meduardofcabral@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://rfcronometragem.pt/obrigado.html" />
+            <input type="hidden" name="_subject" value="Novo pedido de orçamento — rfcronometragem.pt" />
+
+            <div class="form__grid">
+              <label class="form__field">
+                <span class="form__label">Nome</span>
+                <input type="text" name="name" required placeholder="Ex.: Maria Silva" />
+              </label>
+
+              <label class="form__field">
+                <span class="form__label">Email</span>
+                <input type="email" name="email" required placeholder="nome@exemplo.com" />
+              </label>
+            </div>
+
+            <label class="form__field">
+              <span class="form__label">Mensagem</span>
+              <textarea name="message" rows="5" placeholder="Descrição breve da prova, data e local..." required></textarea>
+            </label>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">Enviar</button>
+              <button class="btn btn--ghost" type="reset">Limpar</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact__info">
+          <h3>Informação</h3>
+          <p>
+            Telefone: <a id="contactoTelefone" href="tel:+351935603040">+351 935 603 040</a><br />
+            Localização: <span id="contactoLocal">Porto, Portugal</span>
+          </p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ===================================================================
+       RODAPÉ
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> RF Cronometragem — Todos os direitos reservados.</p>
+      <nav aria-label="Rodapé">
+        <ul class="footer__links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#proximos-eventos">Próximos Eventos</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#portefolio">Portefólio</a></li>
+          <li><a href="#contactos">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+
+  <!-- ===================================================================
+       JANELAS DE RESULTADOS (criadas por js/app.js)
+       =================================================================== -->
+  <div id="janelasResultados"></div>
+
+
+  <!-- ===================================================================
+       AMPLIAR CARTAZES
+       =================================================================== -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Cartaz ampliado">
+    <button type="button" class="lightbox__close" aria-label="Fechar">&times;</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" aria-label="Cartaz anterior">&#8249;</button>
+    <button type="button" class="lightbox__nav lightbox__nav--next" aria-label="Cartaz seguinte">&#8250;</button>
+
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" src="" alt="" />
+      <figcaption class="lightbox__caption">
+        <span class="lightbox__title"></span>
+        <span class="lightbox__date"></span>
+      </figcaption>
+    </figure>
+  </div>
+
+
+  <script src="js/dados.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
