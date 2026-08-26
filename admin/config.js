@@ -9,7 +9,7 @@
 const CONFIG = {
 
   /* <<<<<<<<<<<<<<<<  ALTERE ESTA LINHA  >>>>>>>>>>>>>>>>> */
-  repositorio: 'UTILIZADOR/REPOSITORIO',
+  repositorio: 'iCelo13/RFCrono',
 
   /* O ramo onde o site está publicado. Normalmente 'main'. */
   ramo: 'main',
