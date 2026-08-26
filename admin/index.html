@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Painel do site — RF Cronometragem</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="../img/logo-rf-cronometragem.jpeg" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body>
+
+  <header class="topo">
+    <div class="topo__marca">
+      <img src="../img/logo-rf-cronometragem.jpeg" alt="" />
+      <span>Painel do site</span>
+    </div>
+    <div class="topo__acoes" id="acoesTopo" hidden>
+      <button type="button" id="btnVerSite">Ver o site</button>
+      <button type="button" id="btnSair">Sair</button>
+    </div>
+  </header>
+
+  <div class="pagina">
+
+    <!-- =============================================================
+         ENTRADA
+         ============================================================= -->
+    <section class="ecra ativo" id="ecra-entrada">
+      <div class="entrada">
+        <h1>Bem-vindo</h1>
+        <p class="subtitulo">Escreva a sua chave de acesso para poder alterar o site.</p>
+
+        <div class="cartao">
+          <div class="aviso aviso--erro" id="erroEntrada" hidden></div>
+
+          <label class="campo">
+            <span>Chave de acesso</span>
+            <span class="ajuda">Foi-lhe entregue por quem trata do site. Só precisa de a escrever uma vez neste computador.</span>
+            <input type="password" id="campoChave" autocomplete="off" spellcheck="false" placeholder="github_pat_..." />
+          </label>
+
+          <button type="button" class="botao botao--principal" id="btnEntrar">Entrar</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =============================================================
+         MENU
+         ============================================================= -->
+    <section class="ecra" id="ecra-menu">
+      <h1>O que quer fazer?</h1>
+      <p class="subtitulo">Escolha uma das opções. Nada fica publicado sem confirmar.</p>
+
+      <div class="menu">
+        <button type="button" data-ir="ecra-nova-prova">
+          <span class="icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M12 14v4M10 16h4"/></svg>
+          </span>
+          <span>
+            <b>Anunciar uma prova nova</b>
+            <small>Cartaz, data e hora. Fica em Próximos Eventos e o contador da página inicial passa a apontar para ela.</small>
+          </span>
+        </button>
+
+        <button type="button" data-ir="ecra-resultados">
+          <span class="icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15h6M9 18h6"/></svg>
+          </span>
+          <span>
+            <b>Publicar resultados</b>
+            <small>Carregar os PDFs de uma prova e dar um nome a cada documento.</small>
+          </span>
+        </button>
+
+        <button type="button" data-ir="ecra-provas">
+          <span class="icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </span>
+          <span>
+            <b>Provas já realizadas</b>
+            <small>Passar uma prova de Próximos Eventos para o Portefólio, ou remover uma que já não interessa.</small>
+          </span>
+        </button>
+
+        <button type="button" data-ir="ecra-popup">
+          <span class="icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          </span>
+          <span>
+            <b>Cartaz de entrada</b>
+            <small>A imagem que aparece assim que alguém abre o site. Pode trocar ou desligar.</small>
+          </span>
+        </button>
+
+        <button type="button" data-ir="ecra-parceiros">
+          <span class="icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <span>
+            <b>Parceiros</b>
+            <small>Acrescentar ou remover logótipos de patrocinadores.</small>
+          </span>
+        </button>
+      </div>
+    </section>
+
+
+    <!-- =============================================================
+         NOVA PROVA
+         ============================================================= -->
+    <section class="ecra" id="ecra-nova-prova">
+      <button type="button" class="voltar" data-ir="ecra-menu">&larr; Voltar</button>
+      <h1>Anunciar uma prova nova</h1>
+      <p class="subtitulo">Preencha os três campos e carregue no botão azul lá em baixo.</p>
+
+      <div class="aviso aviso--erro" id="erroNovaProva" hidden></div>
+
+      <div class="cartao">
+        <label class="campo">
+          <span>1. Nome da prova</span>
+          <span class="ajuda">Como quer que apareça no site. Exemplo: Stock Car &amp; Moto 4</span>
+          <input type="text" id="provaTitulo" placeholder="Nome da prova" />
+        </label>
+
+        <div class="linha-dupla">
+          <label class="campo">
+            <span>2. Dia da prova</span>
+            <input type="date" id="provaData" />
+          </label>
+          <label class="campo">
+            <span>3. Hora de início</span>
+            <input type="time" id="provaHora" value="09:00" />
+          </label>
+        </div>
+
+        <div class="campo">
+          <span>4. Cartaz da prova</span>
+          <span class="ajuda">Uma fotografia ou imagem do cartaz. A imagem é encolhida sozinha para o site abrir depressa.</span>
+          <div class="zona-ficheiro">
+            <img class="pre-visualizacao" id="provaPre" hidden alt="" />
+            <input type="file" id="provaCartaz" accept="image/*" />
+            <button type="button" class="botao botao--claro" onclick="document.getElementById('provaCartaz').click()">Escolher imagem</button>
+            <p id="provaNomeFicheiro">Nenhuma imagem escolhida</p>
+          </div>
+        </div>
+
+        <button type="button" class="botao botao--principal" id="btnPublicarProva">Publicar no site</button>
+      </div>
+    </section>
+
+
+    <!-- =============================================================
+         RESULTADOS
+         ============================================================= -->
+    <section class="ecra" id="ecra-resultados">
+      <button type="button" class="voltar" data-ir="ecra-menu">&larr; Voltar</button>
+      <h1>Publicar resultados</h1>
+      <p class="subtitulo">Escolha a prova, carregue os PDFs e dê um nome a cada um.</p>
+
+      <div class="aviso aviso--erro" id="erroResultados" hidden></div>
+
+      <div class="cartao">
+        <label class="campo">
+          <span>1. De que prova são estes resultados?</span>
+          <select id="resultadoProva">
+            <option value="">— escolher —</option>
+          </select>
+        </label>
+
+        <div class="aviso aviso--info" id="resultadoJaTem" hidden></div>
+
+        <div id="resultadoNovaProva" hidden>
+          <div class="linha-dupla">
+            <label class="campo">
+              <span>Nome da prova</span>
+              <input type="text" id="resultadoTitulo" placeholder="Ex.: Motocross Noturno — Maureles" />
+            </label>
+            <label class="campo">
+              <span>Dia da prova</span>
+              <input type="date" id="resultadoData" />
+            </label>
+          </div>
+        </div>
+
+        <div class="campo">
+          <span>2. Documentos PDF</span>
+          <span class="ajuda">Pode escolher vários de uma vez. Depois é só corrigir o nome que aparece no site.</span>
+          <div class="zona-ficheiro">
+            <input type="file" id="resultadoFicheiros" accept="application/pdf" multiple />
+            <button type="button" class="botao botao--claro" onclick="document.getElementById('resultadoFicheiros').click()">Escolher PDFs</button>
+            <p id="resultadoContagem">Nenhum documento escolhido</p>
+          </div>
+        </div>
+
+        <div id="resultadoLista"></div>
+
+        <button type="button" class="botao botao--principal" id="btnPublicarResultados">Publicar resultados</button>
+      </div>
+    </section>
+
+
+    <!-- =============================================================
+         PROVAS (próximas e recentes)
+         ============================================================= -->
+    <section class="ecra" id="ecra-provas">
+      <button type="button" class="voltar" data-ir="ecra-menu">&larr; Voltar</button>
+      <h1>Provas no site</h1>
+      <p class="subtitulo">Quando uma prova se realiza, passe-a para o Portefólio com um botão.</p>
+
+      <div class="aviso aviso--erro" id="erroProvas" hidden></div>
+
+      <h2>Próximos eventos</h2>
+      <div id="listaProximos"></div>
+
+      <h2>Eventos recentes (Portefólio)</h2>
+      <div id="listaRecentes"></div>
+    </section>
+
+
+    <!-- =============================================================
+         POPUP
+         ============================================================= -->
+    <section class="ecra" id="ecra-popup">
+      <button type="button" class="voltar" data-ir="ecra-menu">&larr; Voltar</button>
+      <h1>Cartaz de entrada</h1>
+      <p class="subtitulo">É a imagem que aparece a quem abre o site.</p>
+
+      <div class="aviso aviso--erro" id="erroPopup" hidden></div>
+
+      <div class="cartao">
+        <div class="campo">
+          <span>Cartaz que está no site neste momento</span>
+          <div class="zona-ficheiro">
+            <img class="pre-visualizacao" id="popupAtual" hidden alt="" />
+            <p id="popupEstado">O popup está desligado.</p>
+          </div>
+        </div>
+
+        <div class="campo">
+          <span>Trocar por outra imagem</span>
+          <div class="zona-ficheiro">
+            <img class="pre-visualizacao" id="popupPre" hidden alt="" />
+            <input type="file" id="popupFicheiro" accept="image/*" />
+            <button type="button" class="botao botao--claro" onclick="document.getElementById('popupFicheiro').click()">Escolher imagem</button>
+            <p id="popupNomeFicheiro">Nenhuma imagem escolhida</p>
+          </div>
+        </div>
+
+        <button type="button" class="botao botao--principal" id="btnGuardarPopup">Guardar cartaz de entrada</button>
+        <p style="margin:1rem 0 0"><button type="button" class="botao botao--perigo botao--pequeno" id="btnDesligarPopup">Desligar o popup</button></p>
+      </div>
+    </section>
+
+
+    <!-- =============================================================
+         PARCEIROS
+         ============================================================= -->
+    <section class="ecra" id="ecra-parceiros">
+      <button type="button" class="voltar" data-ir="ecra-menu">&larr; Voltar</button>
+      <h1>Parceiros</h1>
+      <p class="subtitulo">Os logótipos que passam na faixa da página inicial.</p>
+
+      <div class="aviso aviso--erro" id="erroParceiros" hidden></div>
+
+      <div class="cartao">
+        <label class="campo">
+          <span>Nome do parceiro</span>
+          <input type="text" id="parceiroNome" placeholder="Ex.: Fortuna Garage" />
+        </label>
+
+        <div class="campo">
+          <span>Logótipo</span>
+          <div class="zona-ficheiro">
+            <img class="pre-visualizacao" id="parceiroPre" hidden alt="" />
+            <input type="file" id="parceiroFicheiro" accept="image/*" />
+            <button type="button" class="botao botao--claro" onclick="document.getElementById('parceiroFicheiro').click()">Escolher imagem</button>
+            <p id="parceiroNomeFicheiro">Nenhuma imagem escolhida</p>
+          </div>
+        </div>
+
+        <button type="button" class="botao botao--principal" id="btnAdicionarParceiro">Acrescentar parceiro</button>
+      </div>
+
+      <h2>Parceiros no site</h2>
+      <div id="listaParceiros"></div>
+    </section>
+
+
+    <!-- =============================================================
+         SUCESSO
+         ============================================================= -->
+    <section class="ecra" id="ecra-sucesso">
+      <div class="sucesso">
+        <div class="marca" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h1 id="sucessoTitulo">Publicado</h1>
+        <p class="subtitulo" id="sucessoTexto">O site fica atualizado dentro de um a dois minutos.</p>
+        <div class="botoes">
+          <button type="button" class="botao botao--principal" data-ir="ecra-menu">Fazer outra coisa</button>
+          <button type="button" class="botao botao--claro" id="btnAbrirSite">Abrir o site</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <!-- ===============================================================
+       PROGRESSO
+       =============================================================== -->
+  <div class="progresso" id="progresso" role="status" aria-live="polite">
+    <div class="progresso__caixa">
+      <b id="progressoTitulo">A publicar no site…</b>
+      <div class="progresso__barra"><i id="progressoBarra"></i></div>
+      <p class="progresso__texto" id="progressoTexto">A preparar</p>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="github.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
