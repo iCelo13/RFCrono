@@ -276,6 +276,82 @@ const DADOS = {
           "ficheiro": "qx-classificacao-final.pdf"
         }
       ]
+    },
+    {
+      "titulo": "Motocross Alquerubim",
+      "data": "2026-08-16",
+      "estado": "final",
+      "pasta": "resultados/2026-08-16-motocross-alquerubim/",
+      "documentos": [
+        {
+          "titulo": "Final Mx 2",
+          "ficheiro": "final-mx-2.pdf"
+        },
+        {
+          "titulo": "Final Mx 1",
+          "ficheiro": "final-mx-1.pdf"
+        },
+        {
+          "titulo": "MX 1 2 Manga ",
+          "ficheiro": "2-manga-3.pdf"
+        },
+        {
+          "titulo": "MX 1 1 Manga",
+          "ficheiro": "1-manga-3.pdf"
+        },
+        {
+          "titulo": "Final 85 Cc 50 Livres",
+          "ficheiro": "final-85-cc-50-livres.pdf"
+        },
+        {
+          "titulo": "Mx 50cc LIVRES & 85cc",
+          "ficheiro": "2-manga-2.pdf"
+        },
+        {
+          "titulo": "Mx 50cc LIVRES & 85cc",
+          "ficheiro": "1-manga-2.pdf"
+        },
+        {
+          "titulo": "Final 50cc 65cc",
+          "ficheiro": "final-50cc-65cc.pdf"
+        },
+        {
+          "titulo": "Mx 50 cc & 65 cc ",
+          "ficheiro": "2-manga-1.pdf"
+        },
+        {
+          "titulo": "Mx 50 cc & 65 cc ",
+          "ficheiro": "1-manga-1.pdf"
+        },
+        {
+          "titulo": "Pit Elit",
+          "ficheiro": "pit-elit.pdf"
+        },
+        {
+          "titulo": "Segunda Manga",
+          "ficheiro": "segunda-manga.pdf"
+        },
+        {
+          "titulo": "Primeira Manga",
+          "ficheiro": "primeira-manga.pdf"
+        },
+        {
+          "titulo": "Final Pit 140.Pit Fem.Pit 125",
+          "ficheiro": "final-pit-140-pit-fem-pit-125.pdf"
+        },
+        {
+          "titulo": "Final",
+          "ficheiro": "final.pdf"
+        },
+        {
+          "titulo": "2 Manga",
+          "ficheiro": "2-manga.pdf"
+        },
+        {
+          "titulo": "1 Manga",
+          "ficheiro": "1-manga.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
