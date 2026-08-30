@@ -380,6 +380,78 @@ const DADOS = {
           "ficheiro": "qx-final.pdf"
         }
       ]
+    },
+    {
+      "titulo": "Super Enduro Cabeceiras Bastos",
+      "data": "2026-08-01",
+      "estado": "final",
+      "pasta": "resultados/2026-08-01-super-enduro-cabeceiras-bastos/",
+      "documentos": [
+        {
+          "titulo": "1ª Final Expert",
+          "ficheiro": "1-final-expert.pdf"
+        },
+        {
+          "titulo": "1ª Final Pro",
+          "ficheiro": "1-final-pro.pdf"
+        },
+        {
+          "titulo": "1º Final Hobby",
+          "ficheiro": "1-final-hobby.pdf"
+        },
+        {
+          "titulo": "1º Final Promoção",
+          "ficheiro": "1-final-promocao.pdf"
+        },
+        {
+          "titulo": "2ª Final Expert",
+          "ficheiro": "2-final-expert.pdf"
+        },
+        {
+          "titulo": "2ª Final Hobby",
+          "ficheiro": "2-final-hobby.pdf"
+        },
+        {
+          "titulo": "2ª Final Pro",
+          "ficheiro": "2-final-pro.pdf"
+        },
+        {
+          "titulo": "2ª Final Promoção",
+          "ficheiro": "2-final-promocao.pdf"
+        },
+        {
+          "titulo": "Geral Expert",
+          "ficheiro": "geral-expert.pdf"
+        },
+        {
+          "titulo": "Geral Hobby",
+          "ficheiro": "geral-hobby.pdf"
+        },
+        {
+          "titulo": "Geral Pro",
+          "ficheiro": "geral-pro.pdf"
+        },
+        {
+          "titulo": "Geral Promoção",
+          "ficheiro": "geral-promocao.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Expert",
+          "ficheiro": "treinos-cronometrados-expert.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Hobby",
+          "ficheiro": "treinos-cronometrados-hobby.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Pro",
+          "ficheiro": "treinos-cronometrados-pro.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Promoção",
+          "ficheiro": "treinos-cronometrados-promocao.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
