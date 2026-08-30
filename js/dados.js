@@ -352,6 +352,34 @@ const DADOS = {
           "ficheiro": "1-manga.pdf"
         }
       ]
+    },
+    {
+      "titulo": "STOCK CAR  Quad Race",
+      "data": "2026-08-29",
+      "estado": "final",
+      "pasta": "resultados/2026-08-29-stock-car-quad-race/",
+      "documentos": [
+        {
+          "titulo": "RallyCross",
+          "ficheiro": "rallycross.pdf"
+        },
+        {
+          "titulo": "Stock Car",
+          "ficheiro": "stock-car.pdf"
+        },
+        {
+          "titulo": "QX 2ª Manga",
+          "ficheiro": "qx-2-manga.pdf"
+        },
+        {
+          "titulo": "QX 1ª Manga",
+          "ficheiro": "qx-1-manga.pdf"
+        },
+        {
+          "titulo": "QX Final",
+          "ficheiro": "qx-final.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
