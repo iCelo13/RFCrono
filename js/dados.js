@@ -26,6 +26,12 @@ const DADOS = {
       "data": "2026-09-20",
       "hora": "09:00",
       "cartaz": "img/cartazes/2026-09-20-carrinhos-de-rolamentos.jpg"
+    },
+    {
+      "titulo": "Super Enduro Noturno",
+      "data": "2026-09-26",
+      "hora": "09:00",
+      "cartaz": "img/cartazes/2026-09-26-super-enduro-noturno.jpg"
     }
   ],
   "eventosRecentes": [
