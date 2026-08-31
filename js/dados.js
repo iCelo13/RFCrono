@@ -20,6 +20,12 @@ const DADOS = {
       "data": "2026-09-20",
       "hora": "09:00",
       "cartaz": "img/cartazes/2026-09-20-carrinhos-de-rolamentos.jpg"
+    },
+    {
+      "titulo": "Carrinhos de Rolamentos",
+      "data": "2026-09-20",
+      "hora": "09:00",
+      "cartaz": "img/cartazes/2026-09-20-carrinhos-de-rolamentos.jpg"
     }
   ],
   "eventosRecentes": [
