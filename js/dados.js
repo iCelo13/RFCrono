@@ -14,6 +14,12 @@ const DADOS = {
       "data": "2026-08-29",
       "hora": "19:00",
       "cartaz": "img/cartazes/2026-08-29-stock-car-moto4-cinfaes.jpeg"
+    },
+    {
+      "titulo": "69 Corrida Valpaços",
+      "data": "2026-09-05",
+      "hora": "10:00",
+      "cartaz": "img/cartazes/2026-09-05-69-corrida-valpacos.jpg"
     }
   ],
   "eventosRecentes": [
