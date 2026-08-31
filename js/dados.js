@@ -41,11 +41,6 @@ const DADOS = {
       "titulo": "Troféu Norte — Parada do Pinhão",
       "data": "2026-07-25",
       "cartaz": "img/cartazes/2026-07-25-trofeu-norte-parada-do-pinhao.jpeg"
-    },
-    {
-      "titulo": "Motocross Noturno Maureles",
-      "data": "2026-07-25",
-      "cartaz": "img/cartazes/2026-07-25-motocross-noturno-maureles.jpeg"
     }
   ],
   "resultados": [
