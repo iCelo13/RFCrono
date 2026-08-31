@@ -11,11 +11,6 @@ const DADOS = {
   "proximosEventos": [],
   "eventosRecentes": [
     {
-      "titulo": "Stock Car & Moto 4",
-      "data": "2026-08-29",
-      "cartaz": "img/cartazes/2026-08-29-stock-car-moto4-cinfaes.jpeg"
-    },
-    {
       "titulo": "Motocross Alquerubim",
       "data": "2026-08-16",
       "cartaz": "img/cartazes/2026-08-16-motocross-alquerubim.jpeg"
