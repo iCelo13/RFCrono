@@ -474,6 +474,14 @@ const DADOS = {
         {
           "titulo": "85cc Treinos Livres",
           "ficheiro": "85cc-treinos-livres.pdf"
+        },
+        {
+          "titulo": "Screenshot 20260905 195542 OneDrive.jpg",
+          "ficheiro": "screenshot-20260905-195542-onedrive-jpg.pdf"
+        },
+        {
+          "titulo": "Screenshot 20260905 195530 OneDrive.jpg",
+          "ficheiro": "screenshot-20260905-195530-onedrive-jpg.pdf"
         }
       ]
     }
