@@ -10,12 +10,6 @@ const DADOS = {
   },
   "proximosEventos": [
     {
-      "titulo": "69 Corrida Valpaços",
-      "data": "2026-09-05",
-      "hora": "09:00",
-      "cartaz": "img/cartazes/2026-09-05-69-corrida-valpacos.jpg"
-    },
-    {
       "titulo": "Carrinhos de Rolamentos",
       "data": "2026-09-20",
       "hora": "09:00",
@@ -23,6 +17,11 @@ const DADOS = {
     }
   ],
   "eventosRecentes": [
+    {
+      "titulo": "69 Corrida Valpaços",
+      "data": "2026-09-05",
+      "cartaz": "img/cartazes/2026-09-05-69-corrida-valpacos.jpg"
+    },
     {
       "titulo": "Motocross Alquerubim",
       "data": "2026-08-16",
