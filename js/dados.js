@@ -453,6 +453,30 @@ const DADOS = {
           "ficheiro": "treinos-cronometrados-promocao.pdf"
         }
       ]
+    },
+    {
+      "titulo": "Velocidade 69 Valpaços",
+      "data": "2026-09-05",
+      "estado": "final",
+      "pasta": "resultados/2026-09-05-velocidade-69-valpacos/",
+      "documentos": [
+        {
+          "titulo": "50cc Treinos Cronometrados",
+          "ficheiro": "50cc-treinos-cronometrados.pdf"
+        },
+        {
+          "titulo": "50cc Treinos Livres",
+          "ficheiro": "50cc-treinos-livres.pdf"
+        },
+        {
+          "titulo": "85cc Treinos Cronometrados",
+          "ficheiro": "85cc-treinos-cronometrados.pdf"
+        },
+        {
+          "titulo": "85cc Treinos Livres",
+          "ficheiro": "85cc-treinos-livres.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
