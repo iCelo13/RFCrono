@@ -488,6 +488,14 @@ const DADOS = {
         {
           "titulo": "Corrida 50cc",
           "ficheiro": "screenshot-20260905-195530-onedrive-jpg.pdf"
+        },
+        {
+          "titulo": "Corrida 85cc",
+          "ficheiro": "corrida-85cc.pdf"
+        },
+        {
+          "titulo": "Corrida 50cc",
+          "ficheiro": "corrida-50cc.pdf"
         }
       ]
     }
