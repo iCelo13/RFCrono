@@ -20,6 +20,12 @@ const DADOS = {
       "data": "2026-09-26",
       "hora": "09:00",
       "cartaz": "img/cartazes/2026-09-26-super-enduro-noturno.jpg"
+    },
+    {
+      "titulo": "Motocross Alquerubim",
+      "data": "2026-09-27",
+      "hora": "09:00",
+      "cartaz": "img/cartazes/2026-09-27-motocross-alquerubim.jpg"
     }
   ],
   "eventosRecentes": [
