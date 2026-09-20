@@ -503,6 +503,18 @@ const DADOS = {
           "ficheiro": "corrida-50cc.pdf"
         }
       ]
+    },
+    {
+      "titulo": "CARRINHOS  DE ROLAMENTOS",
+      "data": "2026-09-20",
+      "estado": "final",
+      "pasta": "resultados/2026-09-20-carrinhos-de-rolamentos/",
+      "documentos": [
+        {
+          "titulo": "Lista Inscritos ",
+          "ficheiro": "screenshot-20260920-121842-samsung-notes-jpg.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
