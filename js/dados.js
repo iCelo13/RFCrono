@@ -513,6 +513,10 @@ const DADOS = {
         {
           "titulo": "Lista Inscritos ",
           "ficheiro": "screenshot-20260920-121842-samsung-notes-jpg.pdf"
+        },
+        {
+          "titulo": "Descida Livres",
+          "ficheiro": "descida-livres.pdf"
         }
       ]
     }
