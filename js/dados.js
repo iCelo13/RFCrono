@@ -10,12 +10,6 @@ const DADOS = {
   },
   "proximosEventos": [
     {
-      "titulo": "Carrinhos de Rolamentos",
-      "data": "2026-09-20",
-      "hora": "09:00",
-      "cartaz": "img/cartazes/2026-09-20-carrinhos-de-rolamentos.jpg"
-    },
-    {
       "titulo": "Super Enduro Noturno",
       "data": "2026-09-26",
       "hora": "09:00",
@@ -29,6 +23,11 @@ const DADOS = {
     }
   ],
   "eventosRecentes": [
+    {
+      "titulo": "Carrinhos de Rolamentos",
+      "data": "2026-09-20",
+      "cartaz": "img/cartazes/2026-09-20-carrinhos-de-rolamentos.jpg"
+    },
     {
       "titulo": "69 Corrida Valpaços",
       "data": "2026-09-05",
