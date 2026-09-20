@@ -517,6 +517,10 @@ const DADOS = {
         {
           "titulo": "Descida Livres",
           "ficheiro": "descida-livres.pdf"
+        },
+        {
+          "titulo": "Lista Geral",
+          "ficheiro": "lista-geral.pdf"
         }
       ]
     }
