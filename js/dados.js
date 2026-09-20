@@ -529,6 +529,14 @@ const DADOS = {
         {
           "titulo": "1ª Descida Separada",
           "ficheiro": "1-descida-separada.pdf"
+        },
+        {
+          "titulo": "2º Descida Separada",
+          "ficheiro": "2-descida-separada.pdf"
+        },
+        {
+          "titulo": "Geral Da Descida Separado",
+          "ficheiro": "geral-da-descida-separado.pdf"
         }
       ]
     }
