@@ -525,6 +525,10 @@ const DADOS = {
         {
           "titulo": "Decisda Cronometrada",
           "ficheiro": "decisda-cronometrada.pdf"
+        },
+        {
+          "titulo": "1ª Descida Separada",
+          "ficheiro": "1-descida-separada.pdf"
         }
       ]
     }
