@@ -579,6 +579,26 @@ const DADOS = {
           "ficheiro": "geral-ar.pdf"
         }
       ]
+    },
+    {
+      "titulo": "Resistencia Alto Pegadinha",
+      "data": "2026-05-24",
+      "estado": "final",
+      "pasta": "resultados/2026-05-24-resistencia-alto-pegadinha/",
+      "documentos": [
+        {
+          "titulo": "Geral Auto Pegadinha",
+          "ficheiro": "geral-auto-pegadinha.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados",
+          "ficheiro": "treinos-cronometrados.pdf"
+        },
+        {
+          "titulo": "Treinos Livres",
+          "ficheiro": "treinos-livres.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
