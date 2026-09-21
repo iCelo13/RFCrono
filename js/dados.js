@@ -573,6 +573,10 @@ const DADOS = {
         {
           "titulo": "Geral Liquida Avis",
           "ficheiro": "geral-liquida-avis.pdf"
+        },
+        {
+          "titulo": "Geral Campeonato Ar",
+          "ficheiro": "geral-ar.pdf"
         }
       ]
     }
