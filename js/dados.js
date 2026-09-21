@@ -539,6 +539,18 @@ const DADOS = {
           "ficheiro": "geral-da-descida-separado.pdf"
         }
       ]
+    },
+    {
+      "titulo": "2ª Trofeu Resistencia Ferrugentas Ervedal",
+      "data": "2026-02-28",
+      "estado": "final",
+      "pasta": "resultados/2026-02-28-2-trofeu-resistencia-ferrugentas-ervedal/",
+      "documentos": [
+        {
+          "titulo": "Geral Ar Cano",
+          "ficheiro": "geral-ar-cano.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
