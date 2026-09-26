@@ -14,6 +14,12 @@ const DADOS = {
       "data": "2026-09-27",
       "hora": "09:00",
       "cartaz": "img/cartazes/2026-09-27-motocross-alquerubim.jpg"
+    },
+    {
+      "titulo": "2ª Troféu Das Ferrugentas Do Erval",
+      "data": "2026-10-04",
+      "hora": "09:00",
+      "cartaz": "img/cartazes/2026-10-04-2-trofeu-das-ferrugentas-do-erval.jpg"
     }
   ],
   "eventosRecentes": [
