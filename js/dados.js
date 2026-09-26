@@ -648,6 +648,10 @@ const DADOS = {
         {
           "titulo": "1ªFinal Promoção",
           "ficheiro": "1-final-promocao.pdf"
+        },
+        {
+          "titulo": "1ª Final Pró",
+          "ficheiro": "1-final-pro.pdf"
         }
       ]
     }
