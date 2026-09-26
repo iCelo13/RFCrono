@@ -620,6 +620,22 @@ const DADOS = {
         {
           "titulo": "Treinos Livres Pró",
           "ficheiro": "treinos-livres-pro.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Pró (1)",
+          "ficheiro": "treinos-cronometrados-pro-1.pdf"
+        },
+        {
+          "titulo": "Treinos CronometradosPromoção (1)",
+          "ficheiro": "treinos-cronometradospromocao-1.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Hobby 2 (1)",
+          "ficheiro": "treinos-cronometrados-hobby-2-1.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Hobby (1)",
+          "ficheiro": "treinos-cronometrados-hobby-1.pdf"
         }
       ]
     }
