@@ -636,6 +636,14 @@ const DADOS = {
         {
           "titulo": "Treinos Cronometrados Hobby (1)",
           "ficheiro": "treinos-cronometrados-hobby-1.pdf"
+        },
+        {
+          "titulo": "1ª Final Hobby 2",
+          "ficheiro": "1-final-hobby-2.pdf"
+        },
+        {
+          "titulo": "1ª Final Hobby",
+          "ficheiro": "1-final-hobby.pdf"
         }
       ]
     }
