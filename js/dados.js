@@ -598,6 +598,30 @@ const DADOS = {
           "ficheiro": "treinos-livres.pdf"
         }
       ]
+    },
+    {
+      "titulo": "Convivio Super Enduro",
+      "data": "2026-09-26",
+      "estado": "final",
+      "pasta": "resultados/2026-09-26-convivio-super-enduro/",
+      "documentos": [
+        {
+          "titulo": "Treinos Livres Hobby",
+          "ficheiro": "treinos-livres-hobby.pdf"
+        },
+        {
+          "titulo": "Treinos Livres Hobby 2",
+          "ficheiro": "treinos-livres-hobby-2.pdf"
+        },
+        {
+          "titulo": "Treinos Livres Promoção",
+          "ficheiro": "treinos-livres-promocao.pdf"
+        },
+        {
+          "titulo": "Treinos Livres Pró",
+          "ficheiro": "treinos-livres-pro.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
