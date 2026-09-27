@@ -784,6 +784,10 @@ const DADOS = {
         {
           "titulo": "Repescagem",
           "ficheiro": "repescagem.pdf"
+        },
+        {
+          "titulo": "Geral Mx Livres & Mx 85cc",
+          "ficheiro": "geral-mx-livres-mx-85cc.pdf"
         }
       ]
     }
