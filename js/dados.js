@@ -668,6 +668,30 @@ const DADOS = {
         {
           "titulo": "2ªFinal Pró",
           "ficheiro": "2-final-pro.pdf"
+        },
+        {
+          "titulo": "3ªFinal Hobby",
+          "ficheiro": "3-final-hobby.pdf"
+        },
+        {
+          "titulo": "3ª Final Promoção",
+          "ficheiro": "3-final-promocao.pdf"
+        },
+        {
+          "titulo": "3ª Final Hobby 2",
+          "ficheiro": "3-final-hobby-2.pdf"
+        },
+        {
+          "titulo": "Geral Hobby",
+          "ficheiro": "geral-hobby.pdf"
+        },
+        {
+          "titulo": "Geral Hobby 2",
+          "ficheiro": "geral-hobby-2.pdf"
+        },
+        {
+          "titulo": "Geral Promoção",
+          "ficheiro": "geral-promocao.pdf"
         }
       ]
     }
