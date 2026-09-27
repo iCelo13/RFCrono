@@ -748,6 +748,14 @@ const DADOS = {
         {
           "titulo": "2ª Eleminatoria MX1 & MX2",
           "ficheiro": "2-eleminatoria-mx1-mx2.pdf"
+        },
+        {
+          "titulo": "2ª Manga Mx 50cc & MX 65cc",
+          "ficheiro": "2-manga-mx-50cc-mx-65cc.pdf"
+        },
+        {
+          "titulo": "Geral Mx 50cc & Mx 65cc",
+          "ficheiro": "geral-mx-50cc-mx-65cc.pdf"
         }
       ]
     }
