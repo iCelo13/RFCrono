@@ -740,6 +740,10 @@ const DADOS = {
         {
           "titulo": "1ª Manga Livres & 85cc",
           "ficheiro": "1-manga-livres-85cc.pdf"
+        },
+        {
+          "titulo": "1º Eleminatoria MX 1 & MX 2",
+          "ficheiro": "1-eleminatoria-mx-1-mx-2.pdf"
         }
       ]
     }
