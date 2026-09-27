@@ -780,6 +780,10 @@ const DADOS = {
         {
           "titulo": "Geral Pit 140cc & Fem & 125cc",
           "ficheiro": "geral-pit-140cc-fem-125cc.pdf"
+        },
+        {
+          "titulo": "Repescagem",
+          "ficheiro": "repescagem.pdf"
         }
       ]
     }
