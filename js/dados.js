@@ -744,6 +744,10 @@ const DADOS = {
         {
           "titulo": "1º Eleminatoria MX 1 & MX 2",
           "ficheiro": "1-eleminatoria-mx-1-mx-2.pdf"
+        },
+        {
+          "titulo": "2ª Eleminatoria MX1 & MX2",
+          "ficheiro": "2-eleminatoria-mx1-mx2.pdf"
         }
       ]
     }
