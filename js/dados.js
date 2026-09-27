@@ -788,6 +788,10 @@ const DADOS = {
         {
           "titulo": "Geral Mx Livres & Mx 85cc",
           "ficheiro": "geral-mx-livres-mx-85cc.pdf"
+        },
+        {
+          "titulo": "Geral Pit Elite",
+          "ficheiro": "geral-pit-elite.pdf"
         }
       ]
     }
