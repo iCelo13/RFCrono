@@ -708,6 +708,22 @@ const DADOS = {
         {
           "titulo": "Treinos Cronometrados MX1 & MX2",
           "ficheiro": "treinos-cronometrados-mx1-mx2.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados 50cc & 65cc",
+          "ficheiro": "treinos-cronometrados-50cc-65cc.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados 85cc & Livres",
+          "ficheiro": "treinos-cronometrados-85cc-livres.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados 140cc & Femen & 125cc",
+          "ficheiro": "treinos-cronometrados-140cc-femen-125cc.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Open & Veteranos",
+          "ficheiro": "treinos-cronometrados-open-veteranos.pdf"
         }
       ]
     }
