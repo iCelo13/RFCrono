@@ -698,6 +698,18 @@ const DADOS = {
           "ficheiro": "geral-pro.pdf"
         }
       ]
+    },
+    {
+      "titulo": "Motocross Alquerubim 2",
+      "data": "2026-09-27",
+      "estado": "final",
+      "pasta": "resultados/2026-09-27-motocross-alquerubim-2/",
+      "documentos": [
+        {
+          "titulo": "Treinos Cronometrados MX1 & MX2",
+          "ficheiro": "treinos-cronometrados-mx1-mx2.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
