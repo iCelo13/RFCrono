@@ -692,6 +692,10 @@ const DADOS = {
         {
           "titulo": "Geral Promoção",
           "ficheiro": "geral-promocao.pdf"
+        },
+        {
+          "titulo": "Geral Pró",
+          "ficheiro": "geral-pro.pdf"
         }
       ]
     }
