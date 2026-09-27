@@ -728,6 +728,10 @@ const DADOS = {
         {
           "titulo": "1ª Manga Mx 50cc & Mx 65cc",
           "ficheiro": "1-manga-mx-50cc-mx-65cc.pdf"
+        },
+        {
+          "titulo": "1ª Manga Pit Open & Vet",
+          "ficheiro": "1-manga-pit-open-vet.pdf"
         }
       ]
     }
