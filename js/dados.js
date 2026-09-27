@@ -724,6 +724,10 @@ const DADOS = {
         {
           "titulo": "Treinos Cronometrados Open & Veteranos",
           "ficheiro": "treinos-cronometrados-open-veteranos.pdf"
+        },
+        {
+          "titulo": "1ª Manga Mx 50cc & Mx 65cc",
+          "ficheiro": "1-manga-mx-50cc-mx-65cc.pdf"
         }
       ]
     }
