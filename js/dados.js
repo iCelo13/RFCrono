@@ -20,6 +20,12 @@ const DADOS = {
       "data": "2026-10-04",
       "hora": "09:00",
       "cartaz": "img/cartazes/2026-10-04-2-trofeu-das-ferrugentas-do-erval.jpg"
+    },
+    {
+      "titulo": "2° Convivio 50Tinhas",
+      "data": "2026-10-11",
+      "hora": "09:00",
+      "cartaz": "img/cartazes/2026-10-11-2-convivio-50tinhas.jpg"
     }
   ],
   "eventosRecentes": [
