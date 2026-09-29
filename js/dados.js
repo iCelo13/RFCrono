@@ -10,12 +10,6 @@ const DADOS = {
   },
   "proximosEventos": [
     {
-      "titulo": "Motocross Alquerubim",
-      "data": "2026-09-27",
-      "hora": "09:00",
-      "cartaz": "img/cartazes/2026-09-27-motocross-alquerubim.jpg"
-    },
-    {
       "titulo": "2ª Troféu Das Ferrugentas Do Erval",
       "data": "2026-10-04",
       "hora": "09:00",
@@ -29,6 +23,11 @@ const DADOS = {
     }
   ],
   "eventosRecentes": [
+    {
+      "titulo": "Motocross Alquerubim",
+      "data": "2026-09-27",
+      "cartaz": "img/cartazes/2026-09-27-motocross-alquerubim.jpg"
+    },
     {
       "titulo": "Carrinhos de Rolamentos",
       "data": "2026-09-20",
