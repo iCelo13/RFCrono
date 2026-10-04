@@ -51,11 +51,6 @@ const DADOS = {
       "titulo": "Stock Car Moimenta",
       "data": "2026-08-02",
       "cartaz": "img/cartazes/2026-08-02-stock-car-moimenta.jpeg"
-    },
-    {
-      "titulo": "Troféu Norte — Parada do Pinhão",
-      "data": "2026-07-25",
-      "cartaz": "img/cartazes/2026-07-25-trofeu-norte-parada-do-pinhao.jpeg"
     }
   ],
   "resultados": [
