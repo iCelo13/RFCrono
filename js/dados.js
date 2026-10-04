@@ -10,12 +10,6 @@ const DADOS = {
   },
   "proximosEventos": [
     {
-      "titulo": "2ª Troféu Das Ferrugentas Do Erval",
-      "data": "2026-10-04",
-      "hora": "09:00",
-      "cartaz": "img/cartazes/2026-10-04-2-trofeu-das-ferrugentas-do-erval.jpg"
-    },
-    {
       "titulo": "2° Convivio 50Tinhas",
       "data": "2026-10-11",
       "hora": "09:00",
@@ -23,6 +17,11 @@ const DADOS = {
     }
   ],
   "eventosRecentes": [
+    {
+      "titulo": "2ª Troféu Das Ferrugentas Do Erval",
+      "data": "2026-10-04",
+      "cartaz": "img/cartazes/2026-10-04-2-trofeu-das-ferrugentas-do-erval.jpg"
+    },
     {
       "titulo": "Motocross Alquerubim",
       "data": "2026-09-27",
