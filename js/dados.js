@@ -584,6 +584,14 @@ const DADOS = {
         {
           "titulo": "Geral Ar Campeonato",
           "ficheiro": "geral-ar-campeonato.pdf"
+        },
+        {
+          "titulo": "Corrida Liquida Ervedal",
+          "ficheiro": "corrida-liquida-ervedal.pdf"
+        },
+        {
+          "titulo": "Geral Liquido Campeonato",
+          "ficheiro": "geral-liquido-campeonato.pdf"
         }
       ]
     },
