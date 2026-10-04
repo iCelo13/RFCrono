@@ -5,7 +5,7 @@
 
 const DADOS = {
   "popup": {
-    "imagem": "img/cartazes/2026-09-27-29862.jpg",
+    "imagem": "img/cartazes/2026-10-04-25912.jpg",
     "alt": "Cartaz do próximo evento"
   },
   "proximosEventos": [
