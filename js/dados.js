@@ -52,11 +52,6 @@ const DADOS = {
       "titulo": "Super Enduro Vassal",
       "data": "2026-08-15",
       "cartaz": "img/cartazes/2026-08-15-super-enduro-vassal.jpeg"
-    },
-    {
-      "titulo": "Stock Car Moimenta",
-      "data": "2026-08-02",
-      "cartaz": "img/cartazes/2026-08-02-stock-car-moimenta.jpeg"
     }
   ],
   "resultados": [
