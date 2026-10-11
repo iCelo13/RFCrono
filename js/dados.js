@@ -831,6 +831,10 @@ const DADOS = {
         {
           "titulo": "Livres",
           "ficheiro": "livres.pdf"
+        },
+        {
+          "titulo": "Classicas C.Radiador Geral",
+          "ficheiro": "classicas-c-radiador-geral.pdf"
         }
       ]
     }
