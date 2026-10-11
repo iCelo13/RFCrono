@@ -821,7 +821,7 @@ const DADOS = {
       "pasta": "resultados/2026-10-11-2-convivio-cabeca-santa/",
       "documentos": [
         {
-          "titulo": "Classicas C.Radiador",
+          "titulo": "Classicas / C.Radiador",
           "ficheiro": "classicas-c-radiador.pdf"
         }
       ]
