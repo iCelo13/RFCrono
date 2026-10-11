@@ -813,6 +813,18 @@ const DADOS = {
           "ficheiro": "final-mx.pdf"
         }
       ]
+    },
+    {
+      "titulo": "2 Convívio Cabeça  Santa",
+      "data": "2026-10-11",
+      "estado": "final",
+      "pasta": "resultados/2026-10-11-2-convivio-cabeca-santa/",
+      "documentos": [
+        {
+          "titulo": "Classicas C.Radiador",
+          "ficheiro": "classicas-c-radiador.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
