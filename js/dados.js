@@ -10,12 +10,6 @@ const DADOS = {
   },
   "proximosEventos": [
     {
-      "titulo": "2° Convivio 50Tinhas",
-      "data": "2026-10-11",
-      "hora": "09:00",
-      "cartaz": "img/cartazes/2026-10-11-2-convivio-50tinhas.jpg"
-    },
-    {
       "titulo": "T.N Arcos de Valdevez",
       "data": "2026-10-18",
       "hora": "09:00",
@@ -23,6 +17,11 @@ const DADOS = {
     }
   ],
   "eventosRecentes": [
+    {
+      "titulo": "2° Convivio 50Tinhas",
+      "data": "2026-10-11",
+      "cartaz": "img/cartazes/2026-10-11-2-convivio-50tinhas.jpg"
+    },
     {
       "titulo": "2ª Troféu Das Ferrugentas Do Erval",
       "data": "2026-10-04",
