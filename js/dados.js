@@ -823,6 +823,14 @@ const DADOS = {
         {
           "titulo": "Classicas / C.Radiador",
           "ficheiro": "classicas-c-radiador.pdf"
+        },
+        {
+          "titulo": "Dos 4 Aos 10 & 11 Aos 15",
+          "ficheiro": "dos-4-aos-10-11-aos-15.pdf"
+        },
+        {
+          "titulo": "Livres",
+          "ficheiro": "livres.pdf"
         }
       ]
     }
