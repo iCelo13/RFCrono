@@ -46,11 +46,6 @@ const DADOS = {
       "titulo": "Motocross Alquerubim",
       "data": "2026-08-16",
       "cartaz": "img/cartazes/2026-08-16-motocross-alquerubim.jpeg"
-    },
-    {
-      "titulo": "Super Enduro Vassal",
-      "data": "2026-08-15",
-      "cartaz": "img/cartazes/2026-08-15-super-enduro-vassal.jpeg"
     }
   ],
   "resultados": [
