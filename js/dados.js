@@ -14,6 +14,12 @@ const DADOS = {
       "data": "2026-10-18",
       "hora": "09:00",
       "cartaz": "img/cartazes/2026-10-18-t-n-arcos-de-valdevez.jpg"
+    },
+    {
+      "titulo": "Convivio Motocross Vila Boa Quires",
+      "data": "2026-11-01",
+      "hora": "09:00",
+      "cartaz": "img/cartazes/2026-11-01-convivio-motocross-vila-boa-quires.jpg"
     }
   ],
   "eventosRecentes": [
