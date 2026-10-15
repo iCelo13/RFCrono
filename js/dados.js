@@ -854,6 +854,18 @@ const DADOS = {
           "ficheiro": "dos-4-aos-10-11-aos-15-geral-atualizada-1.pdf"
         }
       ]
+    },
+    {
+      "titulo": "Arvos de Valdevez",
+      "data": "2026-10-18",
+      "estado": "final",
+      "pasta": "resultados/2026-10-18-arvos-de-valdevez/",
+      "documentos": [
+        {
+          "titulo": "HORAIOS ",
+          "ficheiro": "screenshot-20261015-100241-jpg.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
