@@ -864,6 +864,10 @@ const DADOS = {
         {
           "titulo": "HORAIOS ",
           "ficheiro": "screenshot-20261015-100241-jpg.pdf"
+        },
+        {
+          "titulo": "Horário",
+          "ficheiro": "screenshot-20261015-100241.pdf"
         }
       ]
     }
