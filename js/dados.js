@@ -868,6 +868,10 @@ const DADOS = {
         {
           "titulo": "Horário",
           "ficheiro": "screenshot-20261015-100241.pdf"
+        },
+        {
+          "titulo": "REGULAMENTO",
+          "ficheiro": "downloadfile.pdf"
         }
       ]
     }
