@@ -923,6 +923,10 @@ const DADOS = {
         {
           "titulo": "GERAL mx Open",
           "ficheiro": "downloadfile-13.pdf"
+        },
+        {
+          "titulo": "GERAL DO TROFÉU ",
+          "ficheiro": "downloadfile-14.pdf"
         }
       ]
     }
