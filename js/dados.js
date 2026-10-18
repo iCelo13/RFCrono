@@ -927,6 +927,10 @@ const DADOS = {
         {
           "titulo": "GERAL DO TROFÉU ",
           "ficheiro": "downloadfile-14.pdf"
+        },
+        {
+          "titulo": "GERAL DO TROFÉU Qx",
+          "ficheiro": "downloadfile-15.pdf"
         }
       ]
     }
