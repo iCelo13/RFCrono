@@ -919,6 +919,10 @@ const DADOS = {
         {
           "titulo": "Mx Opem 2 Manga",
           "ficheiro": "downloadfile-12.pdf"
+        },
+        {
+          "titulo": "GERAL mx Open",
+          "ficheiro": "downloadfile-13.pdf"
         }
       ]
     }
