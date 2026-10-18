@@ -10,12 +10,6 @@ const DADOS = {
   },
   "proximosEventos": [
     {
-      "titulo": "T.N Arcos de Valdevez",
-      "data": "2026-10-18",
-      "hora": "09:00",
-      "cartaz": "img/cartazes/2026-10-18-t-n-arcos-de-valdevez.jpg"
-    },
-    {
       "titulo": "Convivio Motocross Vila Boa Quires",
       "data": "2026-11-01",
       "hora": "09:00",
@@ -23,6 +17,11 @@ const DADOS = {
     }
   ],
   "eventosRecentes": [
+    {
+      "titulo": "T.N Arcos de Valdevez",
+      "data": "2026-10-18",
+      "cartaz": "img/cartazes/2026-10-18-t-n-arcos-de-valdevez.jpg"
+    },
     {
       "titulo": "2° Convivio 50Tinhas",
       "data": "2026-10-11",
