@@ -876,6 +876,10 @@ const DADOS = {
         {
           "titulo": "Qx TreinosCronometrados",
           "ficheiro": "downloadfile-1.pdf"
+        },
+        {
+          "titulo": "Mx Open Treinos Livres",
+          "ficheiro": "downloadfile-2.pdf"
         }
       ]
     }
