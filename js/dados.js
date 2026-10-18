@@ -880,6 +880,10 @@ const DADOS = {
         {
           "titulo": "Mx Open Treinos Livres",
           "ficheiro": "downloadfile-2.pdf"
+        },
+        {
+          "titulo": "MX HOBBY & MX 2 TEMPOS TREINOS Cronometrados",
+          "ficheiro": "downloadfile-3.pdf"
         }
       ]
     }
