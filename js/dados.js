@@ -907,6 +907,10 @@ const DADOS = {
         {
           "titulo": "GERAL Mx Hobby & Mx 2 Tempos",
           "ficheiro": "downloadfile-9.pdf"
+        },
+        {
+          "titulo": "2 Manga QX",
+          "ficheiro": "downloadfile-10.pdf"
         }
       ]
     }
