@@ -46,11 +46,6 @@ const DADOS = {
       "titulo": "69 Corrida Valpaços",
       "data": "2026-09-05",
       "cartaz": "img/cartazes/2026-09-05-69-corrida-valpacos.jpg"
-    },
-    {
-      "titulo": "Motocross Alquerubim",
-      "data": "2026-08-16",
-      "cartaz": "img/cartazes/2026-08-16-motocross-alquerubim.jpeg"
     }
   ],
   "resultados": [
