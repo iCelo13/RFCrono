@@ -940,6 +940,18 @@ const DADOS = {
           "ficheiro": "downloadfile-15.pdf"
         }
       ]
+    },
+    {
+      "titulo": "Vintage Cross Quadrace",
+      "data": "2026-11-15",
+      "estado": "final",
+      "pasta": "resultados/2026-11-15-vintage-cross-quadrace/",
+      "documentos": [
+        {
+          "titulo": "HORÁRIOS ",
+          "ficheiro": "downloadfile-16.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
