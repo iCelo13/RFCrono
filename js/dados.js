@@ -950,6 +950,10 @@ const DADOS = {
         {
           "titulo": "HORÁRIOS ",
           "ficheiro": "downloadfile-16.pdf"
+        },
+        {
+          "titulo": "HORÁRIO Rectificado ",
+          "ficheiro": "screenshot-20261020-125618-facebook.pdf"
         }
       ]
     }
