@@ -956,6 +956,18 @@ const DADOS = {
           "ficheiro": "screenshot-20261020-125618-facebook.pdf"
         }
       ]
+    },
+    {
+      "titulo": "Convívio Motocross Troféu 50Tinhas",
+      "data": "2026-11-01",
+      "estado": "final",
+      "pasta": "resultados/2026-11-01-convivio-motocross-trofeu-50tinhas/",
+      "documentos": [
+        {
+          "titulo": "CARTAZ ",
+          "ficheiro": "screenshot-20261020-132300-facebook.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
