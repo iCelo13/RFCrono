@@ -968,6 +968,18 @@ const DADOS = {
           "ficheiro": "screenshot-20261020-132300-facebook.pdf"
         }
       ]
+    },
+    {
+      "titulo": "HEAD TO HEAD SRINTCROSS",
+      "data": "2026-11-07",
+      "estado": "final",
+      "pasta": "resultados/2026-11-07-head-to-head-srintcross/",
+      "documentos": [
+        {
+          "titulo": "CARTAZ ",
+          "ficheiro": "img-20260929-wa0005.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
