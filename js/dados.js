@@ -978,6 +978,10 @@ const DADOS = {
         {
           "titulo": "CARTAZ ",
           "ficheiro": "img-20260929-wa0005.pdf"
+        },
+        {
+          "titulo": "HORÁRIOS ",
+          "ficheiro": "screenshot-20261020-151258-gallery.pdf"
         }
       ]
     }
