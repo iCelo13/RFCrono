@@ -966,6 +966,10 @@ const DADOS = {
         {
           "titulo": "CARTAZ ",
           "ficheiro": "screenshot-20261020-132300-facebook.pdf"
+        },
+        {
+          "titulo": "Horario 01 11 2026",
+          "ficheiro": "horario-01-11-2026.pdf"
         }
       ]
     },
