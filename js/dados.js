@@ -20,6 +20,12 @@ const DADOS = {
       "data": "2026-11-15",
       "hora": "09:00",
       "cartaz": "img/cartazes/2026-11-15-vintage-cross-quadrace.jpg"
+    },
+    {
+      "titulo": "Motocross Vila Boa Quires",
+      "data": "2026-11-22",
+      "hora": "09:00",
+      "cartaz": "img/cartazes/2026-11-22-motocross-vila-boa-quires.jpg"
     }
   ],
   "eventosRecentes": [
