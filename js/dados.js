@@ -10,12 +10,6 @@ const DADOS = {
   },
   "proximosEventos": [
     {
-      "titulo": "Convivio Motocross Vila Boa Quires",
-      "data": "2026-11-01",
-      "hora": "09:00",
-      "cartaz": "img/cartazes/2026-11-01-convivio-motocross-vila-boa-quires.jpg"
-    },
-    {
       "titulo": "HEAD TO HEAD SPRINTCROSS",
       "data": "2026-11-07",
       "hora": "09:00",
