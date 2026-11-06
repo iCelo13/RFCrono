@@ -986,6 +986,10 @@ const DADOS = {
         {
           "titulo": "HORÁRIOS ",
           "ficheiro": "screenshot-20261020-151258-gallery.pdf"
+        },
+        {
+          "titulo": "Lista Pilotos HEAD To HEAD",
+          "ficheiro": "lista-pilotos-head-to-head.pdf"
         }
       ]
     },
