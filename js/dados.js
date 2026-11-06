@@ -996,7 +996,7 @@ const DADOS = {
       "pasta": "resultados/2026-11-22-motocross-vila-boa-quires/",
       "documentos": [
         {
-          "titulo": "Cartaz",
+          "titulo": "Logo Vila Boa.jpeg",
           "ficheiro": "logo-vila-boa-jpeg.pdf"
         },
         {
