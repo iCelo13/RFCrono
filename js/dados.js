@@ -1014,6 +1014,10 @@ const DADOS = {
         {
           "titulo": "Cartaz",
           "ficheiro": "motocross-vila-boa.pdf"
+        },
+        {
+          "titulo": "Horário Motocross Vila Boa Quires",
+          "ficheiro": "horario-motocross-vila-boa-quires.pdf"
         }
       ]
     }
