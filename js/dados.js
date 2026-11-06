@@ -990,6 +990,10 @@ const DADOS = {
         {
           "titulo": "Lista Pilotos HEAD To HEAD",
           "ficheiro": "lista-pilotos-head-to-head.pdf"
+        },
+        {
+          "titulo": "Lista HEAD To HEAD Actualizada",
+          "ficheiro": "lista-head-to-head.pdf"
         }
       ]
     },
