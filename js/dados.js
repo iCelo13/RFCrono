@@ -1010,6 +1010,10 @@ const DADOS = {
         {
           "titulo": "Horario 22 11 2026",
           "ficheiro": "horario-22-11-2026.pdf"
+        },
+        {
+          "titulo": "Cartaz",
+          "ficheiro": "motocross-vila-boa.pdf"
         }
       ]
     }
