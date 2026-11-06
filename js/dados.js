@@ -998,6 +998,10 @@ const DADOS = {
         {
           "titulo": "Cartaz",
           "ficheiro": "logo-vila-boa-jpeg.pdf"
+        },
+        {
+          "titulo": "Horario 22 11 2026",
+          "ficheiro": "horario-22-11-2026.pdf"
         }
       ]
     }
