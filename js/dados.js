@@ -988,6 +988,18 @@ const DADOS = {
           "ficheiro": "screenshot-20261020-151258-gallery.pdf"
         }
       ]
+    },
+    {
+      "titulo": "Motocross Vila Boa Quires",
+      "data": "2026-11-22",
+      "estado": "final",
+      "pasta": "resultados/2026-11-22-motocross-vila-boa-quires/",
+      "documentos": [
+        {
+          "titulo": "Cartaz",
+          "ficheiro": "logo-vila-boa-jpeg.pdf"
+        }
+      ]
     }
   ],
   "patrocinadores": [
