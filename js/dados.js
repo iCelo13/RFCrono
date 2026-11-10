@@ -1038,10 +1038,6 @@ const DADOS = {
       "logo": "img/patrocinadores/steel-ferreiro.jpeg"
     },
     {
-      "nome": "Empipev",
-      "logo": "img/patrocinadores/empipev.jpeg"
-    },
-    {
       "nome": "Cutandrill Soluções",
       "logo": "img/patrocinadores/cutandrill.jpeg"
     },
