@@ -948,6 +948,18 @@ const DADOS = {
         {
           "titulo": "HORÁRIO Rectificado ",
           "ficheiro": "screenshot-20261020-125618-facebook.pdf"
+        },
+        {
+          "titulo": "Lista Inscritos  Resistencia",
+          "ficheiro": "lista-inscritos-15-11.pdf"
+        },
+        {
+          "titulo": "Lista Inscritos Quads ",
+          "ficheiro": "lista-inscritos-quads-15-11.pdf"
+        },
+        {
+          "titulo": " Lista Inscritos MotoCross",
+          "ficheiro": "motocross.pdf"
         }
       ]
     },
