@@ -1024,6 +1024,10 @@ const DADOS = {
         {
           "titulo": "Horário Motocross Vila Boa Quires",
           "ficheiro": "horario-motocross-vila-boa-quires.pdf"
+        },
+        {
+          "titulo": "Horário Motocross Vila Boa Quires (2) 2",
+          "ficheiro": "horario-motocross-vila-boa-quires-2-2.pdf"
         }
       ]
     }
