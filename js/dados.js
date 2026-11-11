@@ -20,6 +20,12 @@ const DADOS = {
       "data": "2026-11-22",
       "hora": "09:00",
       "cartaz": "img/cartazes/2026-11-22-motocross-vila-boa-quires.jpg"
+    },
+    {
+      "titulo": "Motocross Vila Boa Quires Horarios",
+      "data": "2026-11-22",
+      "hora": "09:00",
+      "cartaz": "img/cartazes/2026-11-22-motocross-vila-boa-quires-horarios.jpg"
     }
   ],
   "eventosRecentes": [
