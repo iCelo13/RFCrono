@@ -960,6 +960,14 @@ const DADOS = {
         {
           "titulo": " Lista Inscritos MotoCross",
           "ficheiro": "motocross.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Moto 4",
+          "ficheiro": "treinos-cronometrados-moto-4.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Mx",
+          "ficheiro": "treinos-cronometrados-mx.pdf"
         }
       ]
     },
