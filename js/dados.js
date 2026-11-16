@@ -1060,6 +1060,14 @@ const DADOS = {
         {
           "titulo": "Grupo C Grupo D",
           "ficheiro": "grupo-c-grupo-d.pdf"
+        },
+        {
+          "titulo": "Repescagem Grupo 1",
+          "ficheiro": "repescagem-3-4.pdf"
+        },
+        {
+          "titulo": "Repescagem Grupo 2",
+          "ficheiro": "repescagem-grupo-2.pdf"
         }
       ]
     },
