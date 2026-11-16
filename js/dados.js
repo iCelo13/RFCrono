@@ -968,6 +968,10 @@ const DADOS = {
         {
           "titulo": "Treinos Cronometrados Mx",
           "ficheiro": "treinos-cronometrados-mx.pdf"
+        },
+        {
+          "titulo": "2ª Manga Mx",
+          "ficheiro": "2-manga-mx.pdf"
         }
       ]
     },
