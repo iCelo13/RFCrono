@@ -972,6 +972,10 @@ const DADOS = {
         {
           "titulo": "2ª Manga Mx",
           "ficheiro": "2-manga-mx.pdf"
+        },
+        {
+          "titulo": "1ª Hora De Resistencia Geral",
+          "ficheiro": "1-hora-de-resistencia-geral.pdf"
         }
       ]
     },
