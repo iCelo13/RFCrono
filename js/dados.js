@@ -976,6 +976,10 @@ const DADOS = {
         {
           "titulo": "1ª Hora De Resistencia Geral",
           "ficheiro": "1-hora-de-resistencia-geral.pdf"
+        },
+        {
+          "titulo": "2 Hora De Resistencia Geral",
+          "ficheiro": "2-hora-de-resistencia-geral.pdf"
         }
       ]
     },
