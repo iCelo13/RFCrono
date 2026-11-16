@@ -1052,6 +1052,14 @@ const DADOS = {
         {
           "titulo": "Lista HEAD To HEAD Actualizada",
           "ficheiro": "lista-head-to-head.pdf"
+        },
+        {
+          "titulo": "Grupo A Grupo B",
+          "ficheiro": "grupo-a-grupo-b.pdf"
+        },
+        {
+          "titulo": "Grupo C Grupo D",
+          "ficheiro": "grupo-c-grupo-d.pdf"
         }
       ]
     },
