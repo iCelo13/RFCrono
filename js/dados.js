@@ -1068,6 +1068,14 @@ const DADOS = {
         {
           "titulo": "Repescagem Grupo 2",
           "ficheiro": "repescagem-grupo-2.pdf"
+        },
+        {
+          "titulo": "1ª Super Final",
+          "ficheiro": "1-super-final.pdf"
+        },
+        {
+          "titulo": "2ª Super Final",
+          "ficheiro": "2-super-final.pdf"
         }
       ]
     },
