@@ -1132,6 +1132,10 @@ const DADOS = {
     {
       "nome": "Taberna O Vilarelho",
       "logo": "img/patrocinadores/taberna-o-vilarelho.jpeg"
+    },
+    {
+      "nome": "rfcronometragem@gmail.com",
+      "logo": "img/patrocinadores/rfcronometragem-gmail-com.jpg"
     }
   ],
   "contactos": {
