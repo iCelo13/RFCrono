@@ -1012,6 +1012,10 @@ const DADOS = {
         {
           "titulo": "2 Hora De Resistencia Por Classe",
           "ficheiro": "2-hora-de-resistencia-por-classe.pdf"
+        },
+        {
+          "titulo": "Geral Voltas Por Equipas",
+          "ficheiro": "geral-por-equipas.pdf"
         }
       ]
     },
