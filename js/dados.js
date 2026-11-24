@@ -4,10 +4,7 @@
    Notas escritas aqui desaparecem quando o painel voltar a gravar. */
 
 const DADOS = {
-  "popup": {
-    "imagem": "img/cartazes/2026-11-16-39538.jpg",
-    "alt": "Cartaz do próximo evento"
-  },
+  "popup": null,
   "proximosEventos": [
     {
       "titulo": "Motocross Vila Boa Quires Horarios",
