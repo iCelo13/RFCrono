@@ -1164,6 +1164,22 @@ const DADOS = {
         {
           "titulo": "Treinos Livres 50cc Livres 85cc",
           "ficheiro": "treinos-livres-50cc-livres-85cc.pdf"
+        },
+        {
+          "titulo": "1ª Manga Mx Pró",
+          "ficheiro": "1-manga-mx-pro.pdf"
+        },
+        {
+          "titulo": "2ª Manga Mx Pró",
+          "ficheiro": "2-manga-mx-pro.pdf"
+        },
+        {
+          "titulo": "Geral Pró",
+          "ficheiro": "geral-pro.pdf"
+        },
+        {
+          "titulo": "Treinos Livres Crono",
+          "ficheiro": "treinos-livres-crono.pdf"
         }
       ]
     }
