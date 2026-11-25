@@ -5,15 +5,13 @@
 
 const DADOS = {
   "popup": null,
-  "proximosEventos": [
+  "proximosEventos": [],
+  "eventosRecentes": [
     {
       "titulo": "Motocross Vila Boa Quires Horarios",
       "data": "2026-11-22",
-      "hora": "09:00",
       "cartaz": "img/cartazes/2026-11-22-motocross-vila-boa-quires-horarios.jpg"
-    }
-  ],
-  "eventosRecentes": [
+    },
     {
       "titulo": "T.N Arcos de Valdevez",
       "data": "2026-10-18",
