@@ -4,7 +4,10 @@
    Notas escritas aqui desaparecem quando o painel voltar a gravar. */
 
 const DADOS = {
-  "popup": null,
+  "popup": {
+    "imagem": "img/cartazes/2026-11-25-feliz-natal-e-2027-nas-pistas-moda-1.jpg",
+    "alt": "Cartaz do próximo evento"
+  },
   "proximosEventos": [],
   "eventosRecentes": [
     {
