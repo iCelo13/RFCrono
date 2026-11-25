@@ -1144,6 +1144,26 @@ const DADOS = {
         {
           "titulo": "Treinos Livres Hobby 50cc C.Radiador",
           "ficheiro": "treinos-livres-hobby-50cc-c-radiador.pdf"
+        },
+        {
+          "titulo": "1ª Manga 50cc Livres 85cc Feme",
+          "ficheiro": "1-manga-50cc-livres-85cc-feme.pdf"
+        },
+        {
+          "titulo": "2ª Manga 50cc Livres 85cc Feme",
+          "ficheiro": "2-manga-50cc-livres-85cc-feme.pdf"
+        },
+        {
+          "titulo": "Geral 50cc Livres 85cc Feme",
+          "ficheiro": "geral-50cc-livres-85cc-feme.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados 50cc Livres 85cc",
+          "ficheiro": "treinos-cronometrados-50cc-livres-85cc.pdf"
+        },
+        {
+          "titulo": "Treinos Livres 50cc Livres 85cc",
+          "ficheiro": "treinos-livres-50cc-livres-85cc.pdf"
         }
       ]
     }
