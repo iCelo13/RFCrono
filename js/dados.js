@@ -1101,6 +1101,26 @@ const DADOS = {
         {
           "titulo": "Horário Motocross Vila Boa Quires (2) 2",
           "ficheiro": "horario-motocross-vila-boa-quires-2-2.pdf"
+        },
+        {
+          "titulo": "1ª Manga Classicas S.Radiador Producão",
+          "ficheiro": "1-manga-classicas-s-radiador-producao.pdf"
+        },
+        {
+          "titulo": "2ª Manga Classicas S.Radiador Producão",
+          "ficheiro": "2-manga-classicas-s-radiador-producao.pdf"
+        },
+        {
+          "titulo": "Geral Classicas S.Radiador Produção",
+          "ficheiro": "geral-classicas-s-radiador-producao.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Classicas S.Radiador Produção",
+          "ficheiro": "treinos-cronometrados-classicas-s-radiador-producao.pdf"
+        },
+        {
+          "titulo": "Treinos Livres Classicas S.Radiador Produção",
+          "ficheiro": "treinos-livres-classicas-s-radiador-producao.pdf"
         }
       ]
     }
