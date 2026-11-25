@@ -1121,6 +1121,26 @@ const DADOS = {
         {
           "titulo": "Treinos Livres Classicas S.Radiador Produção",
           "ficheiro": "treinos-livres-classicas-s-radiador-producao.pdf"
+        },
+        {
+          "titulo": "Geral Hobby C. Radiador",
+          "ficheiro": "geral-hobby-c-radiador.pdf"
+        },
+        {
+          "titulo": "2ª Manga Hobby C. Radiador",
+          "ficheiro": "2-manga-hobby-c-radiador.pdf"
+        },
+        {
+          "titulo": "1ª Manga Hobby C. Radiador",
+          "ficheiro": "1-manga-hobby-c-radiador.pdf"
+        },
+        {
+          "titulo": "Treinos Cronometrados Hobby 50cc C.Radiador",
+          "ficheiro": "treinos-cronometrados-hobby-50cc-c-radiador.pdf"
+        },
+        {
+          "titulo": "Treinos Livres Hobby 50cc C.Radiador",
+          "ficheiro": "treinos-livres-hobby-50cc-c-radiador.pdf"
         }
       ]
     }
